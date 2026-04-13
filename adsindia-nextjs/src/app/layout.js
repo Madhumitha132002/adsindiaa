@@ -14,7 +14,7 @@ const poppins = Poppins({
   weight: ['400', '500', '600', '700', '800']
 })
 
-const BASE_URL = 'https://www.adsindiaa.in'
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.adsindiaa.in'
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),

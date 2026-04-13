@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F1F5FF;
+  --foreground: #483D8B;
+  --btn-from: #3B82F6;
+  --btn-to: #9333EA;
+
+  /* Brand Dark Scale */
+  --brand-dsb: #483D8B;
+  --brand-dsb-dark: #352D66;
+  --brand-dsb-light: #5C4EB2;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Overriding standard colors to DarkSlateBlue */
+  --color-slate-950: var(--brand-dsb-dark);
+  --color-slate-900: var(--brand-dsb);
+  --color-slate-800: var(--brand-dsb-light);
+  --color-black: var(--brand-dsb-dark);
+
+  --color-isg-dark: #1e1b4b;
+  --color-isg-slate: #2d2b6b;
+  --color-isg-teal: #3B82F6;
+  --color-isg-lime: #9333EA;
+  --color-isg-text-gray: #64748b;
+  --color-isg-light-gray: #e2e8f0;
+
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base Utility Classes */
+.section-dark {
+  background: linear-gradient(135deg, #1e1b4b 0%, #2d1b69 100%);
+  color: #ffffff;
+}
+
+.section-slate {
+  background: linear-gradient(135deg, #2d2b6b 0%, #1e1b4b 100%);
+  color: #ffffff;
+}
+
+.section-light {
+  background-color: #ffffff;
+  color: var(--brand-dsb);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e8eeff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3B82F6, #9333EA);
+  border-radius: 10px;
+}
+
+/* ── Global Animations ── */
+@keyframes float-y {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(3deg); }
+}
+
+@keyframes float-y2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(-3deg); }
+}
+
+@keyframes pulse-ring-anim {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+  70% { transform: scale(1); box-shadow: 0 0 0 20px rgba(59, 130, 246, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+@keyframes shine {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-move 15s ease infinite;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.float-card-1 {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+.float-card-2 {
+  animation: float-y2 8s ease-in-out infinite;
+}
+
+.pulse-ring-btn {
+  animation: pulse-ring-anim 2s infinite;
+}
+
+.gradient-text-shine {
+  background: linear-gradient(90deg, #3B82F6, #9333EA, #3B82F6);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shine 3s linear infinite;
+}
+
+/* ── Selection Color ── */
+::selection {
+  background-color: rgba(59, 130, 246, 0.3);
+  color: #ffffff;
+}

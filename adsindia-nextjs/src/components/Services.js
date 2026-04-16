@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Services() {
   const servicesData = [
     { title: "Promotional SMS", slug: "promotional-sms", icon: "fas fa-bullhorn", color: "from-blue-500 to-violet-600", desc: "Scale your reach instantly with AI-driven promotional campaigns featuring SMART Link tracking for real-time conversion insights." },
-    { title: "WhatsApp Marketing (WACTO)", slug: "whatsapp-marketing", icon: "fab fa-whatsapp", color: "from-violet-500 to-purple-600", desc: "Automate the entire customer journey with AI chatbots, multi-agent inboxes, and seamless product catalogs directly on WhatsApp." },
+    { title: "WhatsApp Marketing", slug: "whatsapp-marketing", icon: "fab fa-whatsapp", color: "from-violet-500 to-purple-600", desc: "Automate the entire customer journey with AI chatbots, multi-agent inboxes, and seamless product catalogs directly on WhatsApp." },
     { title: "Transactional SMS", slug: "transactional-sms", icon: "fas fa-shield-alt", color: "from-blue-500 to-indigo-600", desc: "Mission-critical alerts, order updates, and booking confirmations delivered in seconds with 99.9% uptime guarantee." },
     { title: "Secure OTP SMS", slug: "otp-sms", icon: "fas fa-key", color: "from-indigo-500 to-violet-600", desc: "Bank-grade authentication for apps and portals with sub-3 second delivery and global routing paths." },
     { title: "Voice Solutions (IVR)", slug: "voice-solutions", icon: "fas fa-phone-alt", color: "from-blue-600 to-cyan-500", isNew: true, desc: "Professionalize your business with Multi-level IVR, Missed Call marketing, and automated voice feedback systems." },

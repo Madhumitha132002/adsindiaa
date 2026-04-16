@@ -48,14 +48,14 @@ export default function MessagingSolution() {
             </div>
 
             <p className="text-slate-500 text-lg leading-relaxed max-w-xl font-medium">
-              A single unified platform to send bulk SMS, WhatsApp broadcasts, and template messages, while managing customer queries seamlessly from multiple channels with a single team inbox. With WACTO AI-powered automation, ensure 24/7 sales and support engagement.
+              A single unified platform to send bulk SMS, WhatsApp broadcasts, and template messages, while managing customer queries seamlessly from multiple channels with a single team inbox. With our AI-powered automation, ensure 24/7 sales and support engagement.
             </p>
 
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 { icon: 'fa-users-cog', title: 'Multi-Agent Inbox', desc: 'Collaborate with your team to resolve queries in one place.', color: 'text-blue-600 bg-blue-50 border-blue-100', hover: 'hover:border-blue-300' },
                 { icon: 'fa-shield-alt', title: 'Scalable & Secure', desc: '99.9% uptime for mission-critical applications.', color: 'text-violet-600 bg-violet-50 border-violet-100', hover: 'hover:border-violet-300' },
-                { icon: 'fa-robot', title: 'AI Chatbot (WACTO)', desc: '24/7 automated sales and customer support.', color: 'text-indigo-600 bg-indigo-50 border-indigo-100', hover: 'hover:border-indigo-300' },
+                { icon: 'fa-robot', title: 'AI Chatbot', desc: '24/7 automated sales and customer support.', color: 'text-indigo-600 bg-indigo-50 border-indigo-100', hover: 'hover:border-indigo-300' },
                 { icon: 'fa-chart-line', title: 'SMART Tracking', desc: 'Track every click, open, and conversion in real time.', color: 'text-purple-600 bg-purple-50 border-purple-100', hover: 'hover:border-purple-300' },
               ].map((item, i) => (
                 <div key={i} className={`bg-white border border-slate-100 p-5 rounded-2xl transition-all duration-300 ${item.hover} hover:shadow-lg`}>

@@ -197,7 +197,7 @@ export default function ProductsPage() {
               <div className="flagship-card bg-white rounded-[3rem] shadow-2xl shadow-violet-900/5 border border-slate-100 overflow-hidden flex flex-col lg:flex-row-reverse group">
                 <div className="lg:w-1/2 p-12 md:p-16 flex flex-col justify-center">
                   <div className="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#25D366]/10 text-[#128C7E] text-xs font-black uppercase tracking-widest">
-                    <i className="fab fa-whatsapp"></i> WACTO Platform
+                    <i className="fab fa-whatsapp"></i> WhatsApp Platform
                   </div>
                   <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
                     Verified <span className="bg-gradient-to-r from-[#25D366] to-[#128C7E] bg-clip-text text-transparent">WhatsApp CRM</span>
@@ -217,7 +217,7 @@ export default function ProductsPage() {
                     </li>
                   </ul>
                   <Link href="/contact-us" className="inline-flex justify-center items-center px-8 py-4 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white rounded-2xl font-black uppercase tracking-widest text-sm shadow-xl shadow-[#25D366]/20 hover:scale-105 transition-transform w-max">
-                    Get WACTO Access
+                    Get Platform Access
                   </Link>
                 </div>
                 <div className="lg:w-1/2 bg-slate-50 relative min-h-[400px] border-t lg:border-t-0 lg:border-r border-slate-100 p-8 flex items-center justify-center">

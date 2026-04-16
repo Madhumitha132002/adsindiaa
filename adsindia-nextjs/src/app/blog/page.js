@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser';
 
 const recentPosts = [
   { id: 1, image: "/images/poster1.webp", tag: "Branding", tagColor: "#10b981", title: "Premium Brand Identity Solutions", date: "Mar 19, 2026", color: "from-emerald-400 to-emerald-600" },
-  { id: 2, image: "/images/poster2.webp", tag: "WhatsApp", tagColor: "#22c55e", title: "WACTO: AI-Powered Automation", date: "Mar 18, 2026", color: "from-green-400 to-green-600" },
+  { id: 2, image: "/images/poster2.webp", tag: "WhatsApp", tagColor: "#22c55e", title: "AI-Powered Automation", date: "Mar 18, 2026", color: "from-green-400 to-green-600" },
   { id: 3, image: "/images/poster3.webp", tag: "SMS", tagColor: "#3b82f6", title: "Smart Link SMS Marketing", date: "Mar 17, 2026", color: "from-blue-400 to-blue-600" },
   { id: 4, image: "/images/poster4.webp", tag: "Meta Ads", tagColor: "#a855f7", title: "Precision-Targeted Meta Ads", date: "Mar 16, 2026", color: "from-purple-400 to-purple-600" },
   { id: 5, image: "/images/poster5.webp", tag: "Growth", tagColor: "#f59e0b", title: "Scale Your Business", date: "Mar 15, 2026", color: "from-amber-400 to-orange-500" },

@@ -10,17 +10,17 @@ export default function Cta() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-violet-200/20 rounded-full blur-3xl -ml-24 -mb-24 pointer-events-none" />
 
-          <div className="relative z-10 p-10 md:p-16 flex flex-col items-center">
+          <div className="relative z-10 p-6 sm:p-10 md:p-16 flex flex-col items-center">
             <div className="relative z-10 text-center max-w-4xl mx-auto">
-              <div className="inline-flex items-center gap-3 bg-blue-50 border border-blue-200 px-6 py-2.5 rounded-full mb-8">
+              <div className="inline-flex items-center gap-3 bg-blue-50 border border-blue-200 px-4 py-2 md:px-6 md:py-2.5 rounded-full mb-8">
                 <span className="relative flex h-3 w-3">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
                 </span>
-                <span className="text-sm font-bold tracking-widest text-blue-700 uppercase">Join Thousands of Satisfied Customers</span>
+                <span className="text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-blue-700 uppercase">Join Thousands of Satisfied Customers</span>
               </div>
 
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-slate-900">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-slate-900">
                 Ready to Transform Your{' '}<br className="hidden md:block" />
                 <span className="bg-gradient-to-r from-blue-500 to-violet-600 bg-clip-text text-transparent">Business Communication?</span>
               </h2>

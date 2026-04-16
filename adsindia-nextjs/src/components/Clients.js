@@ -39,7 +39,7 @@ export default function Clients() {
       <div className="absolute bottom-[10%] left-[-5%] w-[40%] h-[60%] bg-violet-50 rounded-full blur-[120px] pointer-events-none opacity-60" />
 
       <div className="max-w-[1400px] mx-auto relative z-10">
-        <div className="relative bg-[#F8FAFF] rounded-[4rem] p-8 md:p-16 lg:p-24 shadow-[0_32px_80px_-20px_rgba(45,78,255,0.12)] border border-blue-100/50 flex flex-col items-center overflow-hidden">
+        <div className="relative bg-[#F8FAFF] rounded-[2rem] sm:rounded-[4rem] p-5 sm:p-10 md:p-16 lg:p-24 shadow-[0_32px_80px_-20px_rgba(45,78,255,0.12)] border border-blue-100/50 flex flex-col items-center overflow-hidden">
           
           {/* Header Section */}
           <div className="max-w-3xl mx-auto text-center space-y-6 mb-12">
@@ -47,7 +47,7 @@ export default function Clients() {
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
               Trusted by Experts
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1]">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1]">
               Empowering{' '}
               <span className="bg-gradient-to-r from-blue-500 to-violet-600 bg-clip-text text-transparent">Every Sector</span>{' '}
               in India
@@ -79,7 +79,7 @@ export default function Clients() {
             {filteredClients.map((client, index) => (
               <div
                 key={`${client.name}-${index}`}
-                className="group relative bg-white border border-slate-100 p-8 rounded-[2.5rem] shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2 hover:border-blue-300 text-center animate-fade-in-up"
+                className="group relative bg-white border border-slate-100 p-5 sm:p-8 rounded-[1.5rem] sm:rounded-[2.5rem] shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2 hover:border-blue-300 text-center animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <div className={`w-16 h-16 flex items-center justify-center ${client.color} rounded-2xl mb-5 mx-auto group-hover:scale-110 transition-transform duration-500 shadow-sm`}>

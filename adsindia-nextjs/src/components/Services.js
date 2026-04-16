@@ -21,7 +21,7 @@ export default function Services() {
       <div className="max-w-[1400px] mx-auto z-10 relative px-6 lg:px-10">
         <div className="mb-16 animate-fade-in-up md:w-1/2">
           <span className="inline-block text-[10px] font-black uppercase tracking-[0.3em] text-blue-600 bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full mb-4">Our Expertise</span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
             Discover Our{' '}
             <span className="bg-gradient-to-r from-blue-500 to-violet-600 bg-clip-text text-transparent">Powerful Services</span>{' '}
             that you need
@@ -33,7 +33,7 @@ export default function Services() {
             <Link
               href={`/services/${service.slug}`}
               key={index}
-              className="group flex flex-col sm:flex-row gap-8 items-start animate-fade-in-up bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:shadow-blue-100/40 hover:border-blue-200 transition-all duration-500 cursor-pointer"
+              className="group flex flex-col sm:flex-row gap-8 items-start animate-fade-in-up bg-white border border-slate-100 rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-8 hover:shadow-2xl hover:shadow-blue-100/40 hover:border-blue-200 transition-all duration-500 cursor-pointer"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
               <div className="relative flex-shrink-0">

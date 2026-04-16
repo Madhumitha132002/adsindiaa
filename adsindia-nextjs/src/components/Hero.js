@@ -15,7 +15,7 @@ export default function Hero() {
           {/* ── Left Column ── */}
           <div className="space-y-7 text-center lg:text-left">
             {/* Headline */}
-            <h1 className="text-[2.8rem] sm:text-5xl md:text-6xl lg:text-[4.2rem] font-extrabold leading-[1.1] text-slate-900 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.2rem] font-extrabold leading-[1.1] text-slate-900 tracking-tight">
               The Best{' '}
               <span className="bg-gradient-to-r from-blue-500 to-violet-600 bg-clip-text text-transparent">
                 Digital Marketing

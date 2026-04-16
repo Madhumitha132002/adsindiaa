@@ -90,7 +90,7 @@ export default function Testimonials() {
 
       <div className="max-w-[1400px] mx-auto relative px-4">
         {/* Main Glass Container */}
-        <div className="relative bg-white/70 backdrop-blur-3xl rounded-[3rem] p-8 md:p-16 lg:p-20 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.06)] border border-white flex flex-col items-center overflow-hidden">
+        <div className="relative bg-white/70 backdrop-blur-3xl rounded-[2.5rem] sm:rounded-[3rem] p-5 sm:p-10 md:p-16 lg:p-20 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.06)] border border-white flex flex-col items-center overflow-hidden">
           
           {/* Header Section */}
           <div className="text-center space-y-6 relative z-10 max-w-3xl mb-16">
@@ -105,7 +105,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-6xl font-black text-slate-900 leading-tight"
+              className="text-3xl md:text-6xl font-black text-slate-900 leading-tight"
             >
               What Our Clients <br className="hidden md:block" />
               <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-700 bg-clip-text text-transparent">
@@ -152,8 +152,8 @@ export default function Testimonials() {
                 }}
                 className="absolute w-full px-4"
               >
-                <div className="bg-white border border-slate-100 p-8 md:p-12 rounded-[2.5rem] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.03)] flex flex-col items-center text-center">
-                  <div className="text-6xl mb-8 transform hover:scale-110 transition-transform duration-300">
+                <div className="bg-white border border-slate-100 p-5 sm:p-10 md:p-12 rounded-[1.5rem] sm:rounded-[2.5rem] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.03)] flex flex-col items-center text-center">
+                  <div className="text-4xl sm:text-6xl mb-8 transform hover:scale-110 transition-transform duration-300">
                     {testimonials[index].icon}
                   </div>
 
@@ -164,11 +164,11 @@ export default function Testimonials() {
                   </div>
 
                   <div className="relative mb-12">
-                    <span className="absolute -top-6 -left-4 text-7xl text-blue-50 font-serif leading-none italic pointer-events-none select-none">“</span>
+                    <span className="absolute -top-6 -left-4 text-5xl sm:text-7xl text-blue-50 font-serif leading-none italic pointer-events-none select-none">“</span>
                     <p className="text-slate-600 text-xl md:text-2xl leading-relaxed font-medium italic relative z-10 px-4">
                       {testimonials[index].text}
                     </p>
-                    <span className="absolute -bottom-14 -right-4 text-7xl text-blue-50 font-serif leading-none italic pointer-events-none select-none">”</span>
+                    <span className="absolute -bottom-14 -right-4 text-5xl sm:text-7xl text-blue-50 font-serif leading-none italic pointer-events-none select-none">”</span>
                   </div>
 
                   <div className="w-full h-px bg-slate-50 mb-10" />

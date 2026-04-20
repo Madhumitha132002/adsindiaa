@@ -347,12 +347,7 @@ export default function ServiceDetail({ params }) {
               transition={{ duration: 0.8 }}
               className="max-w-xl"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 mb-8">
-                <LayoutGrid size={14} className="font-bold" />
-                <span className="text-[10px] font-black uppercase tracking-[0.2em]">Ads Indiaa Premium Services</span>
-              </div>
-              
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-black leading-[1.1] mb-8 tracking-tight text-slate-900">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-[1.1] mb-8 tracking-tight text-slate-900">
                 {service.h1.split('—')[0].trim()}
                 {service.h1.includes('—') && (
                   <span className="block mt-2 bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">

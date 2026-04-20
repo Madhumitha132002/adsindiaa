@@ -144,7 +144,7 @@ Please follow up with them regarding our pricing tiers.
                     >
                         <Sparkles size={12} /> Flexible Pricing
                     </motion.div>
-                    <h1 className="text-5xl md:text-7xl font-black tracking-tight text-slate-900 mb-8 leading-[1.1]">
+                    <h1 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 mb-8 leading-[1.1]">
                         Invest in Your <span className="bg-gradient-to-r from-blue-500 to-violet-600 bg-clip-text text-transparent">Digital Future</span>
                     </h1>
                     <p className="text-slate-500 text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">

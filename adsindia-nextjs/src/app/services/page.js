@@ -184,7 +184,7 @@ export default function ServicesPage() {
                         Next-Gen Marketing Infrastructure
                     </motion.div>
 
-                    <h1 className="text-5xl md:text-8xl font-[900] mb-8 tracking-tighter text-slate-900 leading-[0.95] lg:max-w-4xl mx-auto">
+                    <h1 className="text-4xl md:text-6xl font-[900] mb-8 tracking-tighter text-slate-900 leading-[0.95] lg:max-w-4xl mx-auto">
                          Elevate Your <span className="text-blue-600">Digital</span> Presence.
                     </h1>
                     <p className="text-slate-500 text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed opacity-80">

@@ -233,7 +233,7 @@ export default function ClientsPage() {
           margin-bottom: 28px;
         }
         .cl-title {
-          font-size: clamp(2.5rem, 6vw, 5rem);
+          font-size: clamp(2rem, 5vw, 4rem);
           font-weight: 900;
           line-height: 1.05;
           letter-spacing: -0.04em;

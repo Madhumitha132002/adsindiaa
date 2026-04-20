@@ -38,7 +38,7 @@ const servicesData = {
       { step: "04", title: "Insight Analysis", desc: "Analyze performance reports to continuously optimize your marketing spend." }
     ],
     benefits: ["✅ Instant bulk delivery", "✅ Certified DND compliance", "✅ 99.9% message uptime", "✅ Personalized sender IDs"],
-    images: ["/images/new/684ba8c14f7e2d3b7021b6f2_Frame 4273209-p-1600.png", "/images/new/bulk-sms-services.png", "/images/new/WhatisBulkSMS-cXSjF65N.jpg", "/images/new/V1_SMS-vs-RCS_980x460px-1024x481.png"],
+    images: ["/images/new/684ba8c14f7e2d3b7021b6f2_Frame 4273209-p-1600.webp", "/images/new/bulk-sms-services.webp", "/images/new/WhatisBulkSMS-cXSjF65N.webp", "/images/new/V1_SMS-vs-RCS_980x460px-1024x481.webp"],
     ctaText: "Launch Campaign"
   },
   'whatsapp-marketing': {
@@ -61,7 +61,7 @@ const servicesData = {
       { step: "04", title: "Optimization", desc: "Track response times and conversion metrics to refine your communication strategy." }
     ],
     benefits: ["✅ Verified Business Profile", "✅ Real-time multi-agent support", "✅ Advanced drip automation", "✅ Official Meta API integration"],
-    images: ["/images/new/WhatsApp-Chatbot-Automate.jpg", "/images/new/WhatsApp-Bluetick.jpg", "/images/new/689c33d44ce1f2e463c4a8ac_Whatsapp chatbot builder-p-1600.webp", "/images/new/689c301c1ae7b481d0e33317_whatsapp chatbot.webp"],
+    images: ["/images/new/WhatsApp-Chatbot-Automate.webp", "/images/new/WhatsApp-Bluetick.webp", "/images/new/689c33d44ce1f2e463c4a8ac_Whatsapp chatbot builder-p-1600.webp", "/images/new/689c301c1ae7b481d0e33317_whatsapp chatbot.webp"],
     ctaText: "Start Campaign"
   },
   'dynamic-sms': {
@@ -84,7 +84,7 @@ const servicesData = {
       { step: "04", title: "Rapid Delivery", desc: "Send thousands of unique, personalized messages in seconds across our fast routes." }
     ],
     benefits: ["✅ Infinite variable mapping", "✅ Real-time API triggers", "✅ Bulk CSV support", "✅ Detailed delivery logs"],
-    images: ["/images/new/Frame-1.png", "/images/new/dynamic-img22.jpg", "/images/new/WhatsApp-Dynamic-Message.webp", "/images/new/673d214247579fc17d125657_01 - Dynamic Content.png"],
+    images: ["/images/new/Frame-1.webp", "/images/new/dynamic-img22.webp", "/images/new/WhatsApp-Dynamic-Message.webp", "/images/new/673d214247579fc17d125657_01 - Dynamic Content.webp"],
     ctaText: "Get Personal"
   },
   'otp-sms': {
@@ -107,7 +107,7 @@ const servicesData = {
       { step: "04", title: "Live Monitoring", desc: "Keep track of delivery latency and successful authentication rates via our dashboard." }
     ],
     benefits: ["✅ Millisecond delivery global", "✅ 99.99% uptime guarantee", "✅ Direct carrier connections", "✅ Detailed audit trails"],
-    images: ["/images/new/OTP-SMS.webp", "/images/new/OTP-SMS-Step-by-step.png", "/images/new/Two-factor-authentication-2FA.png", "/images/new/unlimited-otp-sender-image-from-shree-tripada-01.png"],
+    images: ["/images/new/OTP-SMS.webp", "/images/new/OTP-SMS-Step-by-step.webp", "/images/new/Two-factor-authentication-2FA.webp", "/images/new/unlimited-otp-sender-image-from-shree-tripada-01.webp"],
     ctaText: "Secure App"
   },
   'transactional-sms': {
@@ -130,7 +130,7 @@ const servicesData = {
       { step: "04", title: "Delivery Oversight", desc: "Monitor success rates and latency through our advanced reporting dashboard." }
     ],
     benefits: ["✅ 24/7 service availability", "✅ Superior delivery rates", "✅ Automatic routing logic", "✅ Full regulatory support"],
-    images: ["/images/new/transactional-sms.png", "/images/new/transactional-sms-vs-otp-sms-for-business-01.png", "/images/new/Payment-alerts.png", "/images/new/smsg-low-cost-high-return-communications-with-transactional-sms-use-case.svg"],
+    images: ["/images/new/transactional-sms.webp", "/images/new/transactional-sms-vs-otp-sms-for-business-01.webp", "/images/new/Payment-alerts.webp", "/images/new/smsg-low-cost-high-return-communications-with-transactional-sms-use-case.svg"],
     ctaText: "Get Started"
   },
   'web-design': {
@@ -153,7 +153,7 @@ const servicesData = {
       { step: "04", title: "Launch & Growth", desc: "Continuous monitoring and updates to keep your application at the peak of performance." }
     ],
     benefits: ["✅ Future-proof technologies", "✅ Mobile-first responsive design", "✅ Optimized for conversion", "✅ Ongoing technical support"],
-    images: ["/images/new/680a1b80b7a094ef37ed03b5_Frame 1805.png", "/images/new/unnamed.webp", "/images/new/Frame-1.png", "/images/new/680a085726eaba22160edee4_Frame 1871.png"],
+    images: ["/images/new/680a1b80b7a094ef37ed03b5_Frame 1805.webp", "/images/new/unnamed.webp", "/images/new/Frame-1.webp", "/images/new/680a085726eaba22160edee4_Frame 1871.webp"],
     ctaText: "Start Build"
   },
   'graphic-design': {
@@ -176,7 +176,7 @@ const servicesData = {
       { step: "04", title: "Full Asset Delivery", desc: "You receive all source files and exports optimized for both digital and print." }
     ],
     benefits: ["✅ 100% custom creatives", "✅ Comprehensive brand equity", "✅ High-res print ready", "✅ Rapid revision cycle"],
-    images: ["/images/new/images (3).png", "/images/new/67de09cdde4d25cc629cace8_Frame 627.png", "/images/new/67de09cde8303b99c5e129e4_Frame 628.png", "/images/new/67de09cdd0d30f0945cf00a1_Frame 1867.png"],
+    images: ["/images/new/images (3).webp", "/images/new/67de09cdde4d25cc629cace8_Frame 627.webp", "/images/new/67de09cde8303b99c5e129e4_Frame 628.webp", "/images/new/67de09cdd0d30f0945cf00a1_Frame 1867.webp"],
     ctaText: "Get Design"
   },
   'meta-ads': {
@@ -199,7 +199,7 @@ const servicesData = {
       { step: "04", title: "Scale Phase", desc: "Scaling budget on winning combinations while continuously testing new hooks." }
     ],
     benefits: ["✅ Dedicated account manager", "✅ Transparent ROI reporting", "✅ Creative A/B testing", "✅ Full pixel configuration"],
-    images: ["/images/new/meta-2.png", "/images/new/Meta-Ads-What-types-of-ads-are-available-blog-image.--scaled.jpeg", "/images/new/680a1b81b51aca53d898923a_Frame 1804-2.png", "/images/new/682456f5d1fcc9b5c1f6929d_Frame 1865-p-1600.png"],
+    images: ["/images/new/meta-2.webp", "/images/new/Meta-Ads-What-types-of-ads-are-available-blog-image.--scaled.webp", "/images/new/680a1b81b51aca53d898923a_Frame 1804-2.webp", "/images/new/682456f5d1fcc9b5c1f6929d_Frame 1865-p-1600.webp"],
     ctaText: "Deploy Ads"
   },
   'voice-solutions': {
@@ -222,7 +222,7 @@ const servicesData = {
       { step: "04", title: "Launch & Analytics", desc: "Go live and track call duration, department traffic, and missed call conversions." }
     ],
     benefits: ["✅ Professional brand image", "✅ Automated call handling", "✅ Scalable cloud infrastructure", "✅ Detailed call recording"],
-    images: ["/images/new/Route-Mobile_Products_Voice_IVR_Banner-copy.webp", "/images/new/images (6).jpg", "/images/new/images (7).jpg", "/images/new/images (8).jpg"],
+    images: ["/images/new/Route-Mobile_Products_Voice_IVR_Banner-copy.webp", "/images/new/images (6).webp", "/images/new/images (7).webp", "/images/new/images (8).webp"],
     ctaText: "Request Quote"
   },
   'rcs-messaging': {
@@ -245,7 +245,7 @@ const servicesData = {
       { step: "04", title: "Campaign Deploy", desc: "Execute high-impact rich messaging campaigns and monitor user interactions." }
     ],
     benefits: ["✅ 5x higher engagement", "✅ Verified blue tick trust", "✅ No app download required", "✅ Native rich-media experience"],
-    images: ["/images/new/rcs1.webp", "/images/new/V1_SMS-vs-RCS_980x460px-1024x481.png", "/images/new/680a085693e0014238588223_Frame 1875.png", "/images/new/680a08561620645eca9fc69b_Frame 1874.png"],
+    images: ["/images/new/rcs1.webp", "/images/new/V1_SMS-vs-RCS_980x460px-1024x481.webp", "/images/new/680a085693e0014238588223_Frame 1875.webp", "/images/new/680a08561620645eca9fc69b_Frame 1874.webp"],
     ctaText: "Upgrade to RCS"
   },
   'ai-workflows': {
@@ -268,7 +268,7 @@ const servicesData = {
       { step: "04", title: "Continuous Refine", desc: "Monitoring the automated flows and refining them for maximum speed and accuracy." }
     ],
     benefits: ["✅ Zero manual data entry", "✅ Instant lead responses", "✅ Error-free processing", "✅ 24/7 autonomous operation"],
-    images: ["/images/new/673d214247579fc17d125657_01 - Dynamic Content.png", "/images/new/684ba8c14f7e2d3b7021b6f2_Frame 4273209-p-1600.png", "/images/new/Automation.webp", "/images/new/680a1b80b7a094ef37ed03b5_Frame 1805.png"],
+    images: ["/images/new/673d214247579fc17d125657_01 - Dynamic Content.webp", "/images/new/684ba8c14f7e2d3b7021b6f2_Frame 4273209-p-1600.webp", "/images/new/Automation.webp", "/images/new/680a1b80b7a094ef37ed03b5_Frame 1805.webp"],
     ctaText: "Automate Today"
   },
   'meta-whatsapp-api': {
@@ -291,7 +291,7 @@ const servicesData = {
       { step: "04", title: "Compliance Check", desc: "Final verification of message templates and opt-in processes for official launch." }
     ],
     benefits: ["✅ Trusted business verification", "✅ Massive broadcast limits", "✅ Guaranteed API stability", "✅ Full session management"],
-    images: ["/images/new/689c301c1ae7b481d0e33317_whatsapp chatbot.webp", "/images/new/WhatsApp-Bluetick.jpg", "/images/new/WhatsApp-Chatbot-Automate.jpg", "/images/new/689c33d44ce1f2e463c4a8ac_Whatsapp chatbot builder-p-1600.webp"],
+    images: ["/images/new/689c301c1ae7b481d0e33317_whatsapp chatbot.webp", "/images/new/WhatsApp-Bluetick.webp", "/images/new/WhatsApp-Chatbot-Automate.webp", "/images/new/689c33d44ce1f2e463c4a8ac_Whatsapp chatbot builder-p-1600.webp"],
     ctaText: "Link API"
   }
 };
@@ -316,7 +316,7 @@ const DEFAULT_SERVICE = {
       { step: "04", title: "Scale Phase", desc: "Review performance analytics and scale winning configurations." }
     ],
     benefits: ["✅ ISO Certified Infrastructure", "✅ End-to-end Deployments", "✅ Real-time Performance Logs", "✅ 1,000,000+ Daily Capacity"],
-    images: ["/images/new/680a08557fde502beb620434_Frame 1873.png", "/images/new/680a0856a93b549cccfea4b4_Frame 1876.png", "/images/new/67de09cdd0d30f0945cf00a1_Frame 1867.png", "/images/new/680a08561620645eca9fc69b_Frame 1874.png"],
+    images: ["/images/new/680a08557fde502beb620434_Frame 1873.webp", "/images/new/680a0856a93b549cccfea4b4_Frame 1876.webp", "/images/new/67de09cdd0d30f0945cf00a1_Frame 1867.webp", "/images/new/680a08561620645eca9fc69b_Frame 1874.webp"],
     ctaText: "Deploy Now"
 };
 

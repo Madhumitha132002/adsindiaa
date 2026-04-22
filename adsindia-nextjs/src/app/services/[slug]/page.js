@@ -395,7 +395,7 @@ export default function ServiceDetail({ params }) {
                 ></video>
                 
                 {/* Overlay Badge */}
-                <div className="absolute bottom-10 left-10 p-5 bg-white/80 backdrop-blur-xl border border-white/40 rounded-3xl flex items-center gap-4 shadow-xl">
+                <div className="hidden md:flex absolute bottom-10 left-10 p-5 bg-white/80 backdrop-blur-xl border border-white/40 rounded-3xl items-center gap-4 shadow-xl">
                   <div className="flex -space-x-3">
                     {[1,2,3].map(i => (
                       <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden shadow-sm">
@@ -594,26 +594,26 @@ export default function ServiceDetail({ params }) {
       </section>
 
       {/* ── FINAL LIGHT CTA ── */}
-      <section className="py-32 px-4 bg-white">
+      <section className="py-20 md:py-32 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-blue-50/50 to-violet-50/50 rounded-[4rem] p-16 md:p-24 text-center border-2 border-white shadow-2xl relative overflow-hidden"
+              className="bg-gradient-to-br from-blue-50/50 to-violet-50/50 rounded-[2.5rem] md:rounded-[4rem] p-10 md:p-24 text-center border-2 border-white shadow-2xl relative overflow-hidden"
             >
               <div className="relative z-10">
-                <div className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px] mb-8">Ready to grow?</div>
-                <h2 className="text-4xl md:text-7xl font-black text-slate-900 mb-10 leading-[1.1] tracking-tight">
+                <div className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px] mb-6 md:mb-8">Ready to grow?</div>
+                <h2 className="text-3xl md:text-7xl font-black text-slate-900 mb-8 md:mb-10 leading-[1.1] tracking-tight">
                   Let's engineer <br />
                   <span className="text-blue-600">your next win.</span>
                 </h2>
-                <Link href="/contact-us" className="inline-flex items-center justify-center gap-4 px-14 py-6 bg-slate-900 text-white font-black rounded-[2.5rem] hover:bg-blue-600 transition-all duration-300 shadow-2xl group">
-                  <span className="uppercase tracking-widest text-[11px]">{service.ctaText}</span>
+                <Link href="/contact-us" className="inline-flex items-center justify-center gap-4 px-10 py-5 md:px-14 md:py-6 bg-slate-900 text-white font-black rounded-2xl md:rounded-[2.5rem] hover:bg-blue-600 transition-all duration-300 shadow-2xl group">
+                  <span className="uppercase tracking-widest text-[10px] md:text-[11px]">{service.ctaText}</span>
                   <Zap size={18} fill="currentColor" className="group-hover:scale-125 transition-transform" />
                 </Link>
                 
-                <p className="mt-12 text-slate-400 text-sm font-bold flex items-center justify-center gap-4">
+                <p className="mt-8 md:mt-12 text-slate-400 text-[12px] md:text-sm font-bold flex items-center justify-center gap-4">
                   <ShieldCheck size={18} className="text-blue-500" />
                   No card required. Free technical audit.
                 </p>

@@ -487,28 +487,28 @@ export default function AboutUs() {
         {/* ─── FINAL CTA ─── */}
         <section className="px-4 py-20" aria-label="Get Started with Ads India">
           <div className="max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-700 rounded-[3.5rem] p-16 text-center relative overflow-hidden shadow-2xl shadow-blue-500/30">
+            <div className="bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-700 rounded-[2.5rem] md:rounded-[3.5rem] p-10 md:p-16 text-center relative overflow-hidden shadow-2xl shadow-blue-500/30">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_rgba(255,255,255,0.1),_transparent_70%)] pointer-events-none"></div>
               <div className="relative z-10">
                 <span className="inline-block text-[10px] font-black uppercase tracking-[0.3em] text-white/70 bg-white/10 border border-white/20 px-4 py-1.5 rounded-full mb-4">Get Started Today</span>
-                <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight leading-tight">
+                <h2 className="text-3xl md:text-5xl font-black text-white mb-6 tracking-tight leading-tight">
                   Ready to Grow Your Business with India's{' '}
                   <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">Best Bulk SMS & Marketing Company?</span>
                 </h2>
-                <p className="text-white/70 text-lg mb-12 max-w-xl mx-auto font-medium">
+                <p className="text-white/70 text-sm md:text-lg mb-10 md:mb-12 max-w-xl mx-auto font-medium">
                   Join <strong className="text-white">5000+ businesses</strong> who trust Ads India to power their <strong className="text-white">bulk SMS communications and digital marketing growth</strong> across India.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
                   <Link
                     href="/contact-us"
-                    className="inline-flex items-center gap-3 px-10 py-5 bg-white text-blue-700 font-black rounded-2xl hover:scale-105 transition-all shadow-xl uppercase tracking-widest text-xs"
+                    className="inline-flex items-center gap-3 px-8 py-4 md:px-10 md:py-5 bg-white text-blue-700 font-black rounded-2xl hover:scale-105 transition-all shadow-xl uppercase tracking-widest text-[10px] md:text-xs"
                     aria-label="Contact Ads India - Leading Bulk SMS and Digital Marketing Company in India"
                   >
                     Start Your Business Today <i className="fas fa-arrow-right" aria-hidden="true"></i>
                   </Link>
                   <Link
                     href="/services"
-                    className="inline-flex items-center gap-3 px-10 py-5 bg-white/10 border border-white/20 text-white font-black rounded-2xl hover:scale-105 transition-all uppercase tracking-widest text-xs backdrop-blur-sm"
+                    className="inline-flex items-center gap-3 px-8 py-4 md:px-10 md:py-5 bg-white/10 border border-white/20 text-white font-black rounded-2xl hover:scale-105 transition-all uppercase tracking-widest text-[10px] md:text-xs backdrop-blur-sm"
                     aria-label="Explore Ads India bulk SMS and digital marketing services"
                   >
                     Explore Our Services

@@ -506,8 +506,10 @@ export default function ClientsPage() {
           .testimonials-grid { grid-template-columns: 1fr; }
           .hero-stats { gap: 10px; }
           .stat-pill { width: 100%; justify-content: center; }
-          .cta-box { padding: 60px 24px; border-radius: 32px; }
-          .cta-title { font-size: 26px; }
+          .cta-box { padding: 40px 24px; border-radius: 2rem; }
+          .cta-title { font-size: 28px; line-height: 1.2; }
+          .cta-sub { font-size: 16px; margin-bottom: 24px; }
+          .cta-btn { padding: 16px 32px; font-size: 14px; width: 100%; text-align: center; }
         }
       `}</style>
     </>

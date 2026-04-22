@@ -1,21 +1,65 @@
+"use client";
+
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
 export default function Hero() {
+  const services = [
+    {
+      image: '/images/services/promo_3d.webp',
+      title: 'Promotional SMS Marketing'
+    },
+    {
+      image: '/images/services/transac_3d.webp',
+      title: 'Transactional SMS Solutions'
+    },
+    {
+      image: '/images/services/whatsapp_3d.webp',
+      title: 'WhatsApp Business API'
+    },
+    {
+      image: '/images/services/OTP SMS.webp',
+      title: 'OTP & Authentication Services'
+    },
+    {
+      image: '/images/services/Meta Ads.webp',
+      title: 'Meta & Social Media Advertising'
+    },
+    {
+      image: '/images/services/Dynamic SMS.webp',
+      title: 'Dynamic & Personalized Messaging'
+    }
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % services.length);
+        setIsAnimating(false);
+      }, 500);
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, [services.length]);
+
   return (
-    <section className="relative w-full min-h-screen flex items-center bg-[#F1F5FF] overflow-hidden pt-24 pb-16 lg:pt-0">
+    <section className="relative w-full bg-[#F1F5FF] overflow-hidden pt-4 pb-6 lg:pt-6">
 
       {/* Subtle decorative blobs */}
       <div className="absolute top-[-120px] right-[-120px] w-[480px] h-[480px] rounded-full bg-gradient-to-br from-blue-400/15 to-violet-400/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-[-80px] left-[-80px] w-[320px] h-[320px] rounded-full bg-gradient-to-tr from-violet-400/15 to-blue-400/10 blur-2xl pointer-events-none" />
 
       <div className="max-w-[1380px] mx-auto w-full px-6 lg:px-10 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-10 items-center min-h-[calc(100vh-96px)] lg:min-h-0 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-10 items-center mb-10 lg:mb-24">
 
           {/* ── Left Column ── */}
-          <div className="space-y-7 text-center lg:text-left">
+          <div className="space-y-5 md:space-y-7 text-center lg:text-left mt-4 md:mt-0">
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.2rem] font-extrabold leading-[1.1] text-slate-900 tracking-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[4.2rem] font-extrabold leading-[1.1] text-slate-900 tracking-tight">
               The Best{' '}
               <span className="bg-gradient-to-r from-blue-500 to-violet-600 bg-clip-text text-transparent">
                 Digital Marketing
@@ -24,114 +68,147 @@ export default function Hero() {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-slate-500 text-lg md:text-xl font-medium max-w-xl leading-relaxed mx-auto lg:mx-0">
+            <p className="text-slate-500 text-base md:text-xl font-medium max-w-xl leading-relaxed mx-auto lg:mx-0 opacity-90">
               Scale your brand, increase organic traffic, and generate high-quality leads with our data-driven bulk SMS, SEO, and marketing strategies.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
               <Link
                 href="/contact-us"
-                className="px-8 py-4 rounded-2xl font-bold text-[15px] text-white bg-gradient-to-r from-blue-500 to-violet-600 shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 hover:scale-[1.03] transition-all text-center"
+                className="px-8 py-3.5 md:py-4 rounded-2xl font-bold text-[14px] md:text-[15px] text-white bg-gradient-to-r from-blue-500 to-violet-600 shadow-lg shadow-blue-500/25 active:scale-95 transition-all text-center"
               >
                 Get a Free Proposal
               </Link>
               <Link
                 href="/packages"
-                className="px-8 py-4 rounded-2xl font-bold text-[15px] text-slate-700 border-2 border-slate-200 bg-white hover:border-blue-400 hover:text-blue-600 transition-all text-center shadow-sm hover:shadow-md"
+                className="px-8 py-3.5 md:py-4 rounded-2xl font-bold text-[14px] md:text-[15px] text-slate-700 border-2 border-slate-200 bg-white active:scale-95 transition-all text-center"
               >
                 View Our Packages
               </Link>
             </div>
-
-            {/* Trust indicators */}
-            <div className="flex items-center gap-3 justify-center lg:justify-start pt-1">
-              <div className="flex -space-x-2">
-                {[
-                  'bg-gradient-to-br from-blue-400 to-blue-600',
-                  'bg-gradient-to-br from-violet-400 to-violet-600',
-                  'bg-gradient-to-br from-indigo-400 to-indigo-600',
-                  'bg-gradient-to-br from-purple-400 to-purple-600',
-                ].map((c, i) => (
-                  <div
-                    key={i}
-                    className={`w-9 h-9 rounded-full border-2 border-white ${c} flex items-center justify-center text-white font-bold text-xs`}
-                  >
-                    {['A', 'R', 'S', 'M'][i]}
-                  </div>
-                ))}
-              </div>
-              <div>
-                <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-xs text-slate-500 font-medium mt-0.5">
-                  Trusted by <span className="text-slate-800 font-bold">5000+ businesses</span>
-                </p>
-              </div>
-            </div>
           </div>
 
-          {/* ── Right Column ── */}
-          <div className="relative h-[520px] lg:h-[600px] hidden lg:flex items-center justify-center">
+          {/* ── Right Column (Modern Premium Slideshow) ── */}
+          <div className="relative h-[380px] sm:h-[450px] md:h-[550px] lg:h-[650px] flex items-center justify-center">
+            
+            {/* Background Aura Glows */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-400 rounded-full aura-glow animate-aura-1 hidden md:block" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-violet-400 rounded-full aura-glow animate-aura-2 hidden md:block" />
 
-            {/* Main image */}
-            <div className="absolute inset-0 flex items-center justify-end pr-4">
-              <div className="relative w-[88%] h-[92%] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-blue-200/30 border border-slate-100">
+            {/* Slide Container with Perspective */}
+            <div className={`relative w-full aspect-square max-w-[320px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[600px] transition-all duration-1000 transform ${isAnimating ? 'opacity-0 scale-90 -rotate-3' : 'opacity-100 scale-100 rotate-0'}`}>
+              <div className="relative w-full h-full flex items-center justify-center p-2 md:p-4">
                 <Image
-                  src="/images/about_us.webp"
-                  alt="Ads India team at work"
-                  fill
-                  className="object-cover"
+                  src={services[currentSlide].image}
+                  alt={services[currentSlide].title}
+                  width={650}
+                  height={650}
+                  className="object-contain drop-shadow-[0_15px_40px_rgba(59,130,246,0.2)] md:drop-shadow-[0_20px_60px_rgba(59,130,246,0.25)]"
                   priority
+                  unoptimized={true}
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/5 to-transparent" />
+              </div>
+
+              {/* Floating Glassmorphism Card (Minimalist) */}
+              <div className="absolute -bottom-2 left-6 right-6 md:bottom-8 md:-right-4 md:left-auto md:w-[240px] glass-card rounded-[1.2rem] md:rounded-[1.5rem] p-3.5 md:p-4 pt-4.5 md:pt-5 transition-all duration-700 delay-300 transform translate-y-0 group">
+                <div className="flex flex-col gap-1 md:gap-1.5">
+                  <span className="text-[8px] md:text-[9px] font-bold tracking-[0.15em] text-blue-600 uppercase opacity-60">Expertise</span>
+                  <h3 className="text-base md:text-xl font-black text-slate-900 leading-tight">
+                    {services[currentSlide].title}
+                  </h3>
+                  <div className="mt-1 flex md:mt-1.5 gap-1">
+                    {services.map((_, idx) => (
+                      <div 
+                        key={idx} 
+                        className={`h-1 rounded-full transition-all duration-500 ${idx === currentSlide ? 'w-6 bg-blue-600' : 'w-1.5 bg-slate-200'}`} 
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                {/* Shimmer Effect overlay */}
+                <div className="absolute inset-0 rounded-[1.2rem] md:rounded-[1.5rem] overflow-hidden pointer-events-none">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/30 to-white/0 -translate-x-full animate-marquee" style={{ animationDuration: '3s', animationIterationCount: 'infinite' }} />
+                </div>
               </div>
             </div>
 
-            {/* Floating stat chip — Traffic */}
-            <div className="absolute top-12 left-0 z-20 flex items-center gap-3 bg-white rounded-2xl px-4 py-3 shadow-xl border border-slate-100 animate-hero-float">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center flex-shrink-0">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              </div>
-              <div>
-                <p className="text-xs text-slate-500 font-medium">Organic Traffic</p>
-                <p className="text-base font-extrabold text-slate-900">+45% Growth</p>
-              </div>
-            </div>
+          </div>
+        </div>
+      </div>
 
-            {/* Floating stat chip — Rating */}
-            <div className="absolute bottom-16 left-[-16px] z-20 flex items-center gap-3 bg-white rounded-2xl px-4 py-3 shadow-xl border border-slate-100 animate-hero-float-delay">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center flex-shrink-0">
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              </div>
-              <div>
-                <p className="text-xs text-slate-500 font-medium">Client Satisfaction</p>
-                <p className="text-base font-extrabold text-slate-900">⭐ 4.9 / 5 Rating</p>
-              </div>
-            </div>
-
-            {/* Floating stat chip — Projects */}
-            <div className="absolute top-[45%] right-[-10px] z-20 flex items-center gap-3 bg-white rounded-2xl px-4 py-3 shadow-xl border border-slate-100 animate-hero-float-slow">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500 to-purple-700 flex items-center justify-center flex-shrink-0">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <div>
-                <p className="text-xs text-slate-500 font-medium">Projects Delivered</p>
-                <p className="text-base font-extrabold text-slate-900">5000+ Clients</p>
-              </div>
-            </div>
-
+      {/* ── Client Marquee (Steady, Top Colleges Lead) ── */}
+      <div className="w-full overflow-hidden bg-white border-y border-slate-100 py-6 md:py-8 relative z-20">
+        <div className="relative w-full overflow-hidden">
+          <div className="animate-marquee whitespace-nowrap flex items-center gap-12 md:gap-20">
+            {[
+              // ── Top Priority Colleges ──
+              '/images/clients/vit.png',
+              '/images/clients/anna.png',
+              
+              // ── Other Educational Institutions ──
+              '/images/clients/saveetha-university.png',
+              '/images/clients/mgr.png',
+              '/images/clients/vel tech.png',
+              '/images/clients/avit.png',
+              '/images/clients/vinayagam.png',
+              
+              // ── Commercial & Service Partners ──
+              '/images/clients/dhaanish.png',
+              '/images/clients/mm.jpg',
+              '/images/clients/vallalar.jpg',
+              '/images/clients/vimal.jpg',
+              '/images/clients/Texile/avm.avif',
+              '/images/clients/Texile/download.png',
+              '/images/clients/Texile/kgf.jpg',
+              '/images/clients/mottors/bmg.jpg',
+              '/images/clients/mottors/rms.jpg',
+              '/images/clients/mottors/salvam.jpg',
+              '/images/clients/mottors/sathya.jpg',
+              '/images/clients/mottors/sri.png',
+            ].concat([
+              '/images/clients/vit.png',
+              '/images/clients/anna.png',
+              '/images/clients/saveetha-university.png',
+              '/images/clients/mgr.png',
+              '/images/clients/vel tech.png',
+              '/images/clients/avit.png',
+              '/images/clients/vinayagam.png',
+              '/images/clients/dhaanish.png',
+              '/images/clients/mm.jpg',
+              '/images/clients/vallalar.jpg',
+              '/images/clients/vimal.jpg',
+              '/images/clients/Texile/avm.avif',
+              '/images/clients/Texile/download.png',
+              '/images/clients/Texile/kgf.jpg',
+              '/images/clients/mottors/bmg.jpg',
+              '/images/clients/mottors/rms.jpg',
+              '/images/clients/mottors/salvam.jpg',
+              '/images/clients/mottors/sathya.jpg',
+              '/images/clients/mottors/sri.png',
+            ]).map((src, idx) => {
+              const isLarge = src.includes('saveetha-university.png') || src.includes('anna.png');
+              return (
+                <div 
+                  key={idx} 
+                  className={`relative flex-shrink-0 px-2 md:px-4 transition-transform duration-500 hover:scale-105 
+                    ${isLarge 
+                      ? 'h-24 md:h-36 min-w-[180px] md:min-w-[320px]' 
+                      : 'h-20 md:h-28 min-w-[140px] md:min-w-[240px]'}`}
+                >
+                  <Image
+                    src={src}
+                    alt="Partner Logo"
+                    fill
+                    className="object-contain"
+                    sizes={isLarge ? "(max-width: 768px) 180px, 320px" : "(max-width: 768px) 140px, 240px"}
+                    priority
+                    unoptimized={true}
+                  />
+                </div>
+              );
+            })}
           </div>
 
         </div>

@@ -1,218 +1,195 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-export default function Hero() {
-  const services = [
-    {
-      image: '/images/services/promo_3d.webp',
-      title: 'Promotional SMS Marketing'
-    },
-    {
-      image: '/images/services/transac_3d.webp',
-      title: 'Transactional SMS Solutions'
-    },
-    {
-      image: '/images/services/whatsapp_3d.webp',
-      title: 'WhatsApp Business API'
-    },
-    {
-      image: '/images/services/OTP SMS.webp',
-      title: 'OTP & Authentication Services'
-    },
-    {
-      image: '/images/services/Meta Ads.webp',
-      title: 'Meta & Social Media Advertising'
-    },
-    {
-      image: '/images/services/Dynamic SMS.webp',
-      title: 'Dynamic & Personalized Messaging'
-    }
-  ];
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
+const services = [
+  { image: "/images/new/684ba8c14f7e2d3b7021b6f2_Frame 4273209-p-1600.webp", title: "Promotional SMS", tag: "Bulk Offers", href: "/services/promotional-sms" },
+  { image: "/images/new/transactional-sms.webp", title: "Transactional SMS", tag: "Alerts & OTP", href: "/services/transactional-sms" },
+  { image: "/images/new/WhatsApp-Chatbot-Automate.webp", title: "WhatsApp Marketing", tag: "Rich Media Broadcast", href: "/services/whatsapp-marketing" },
+  { image: "/images/new/OTP-SMS.webp", title: "OTP Verification", tag: "Sub-3s Delivery", href: "/services/otp-sms" },
+  { image: "/images/new/meta-2.webp", title: "Meta & Social Ads", tag: "High-ROI Campaigns", href: "/services/meta-ads" },
+  { image: "/images/new/Frame-1.webp", title: "Dynamic SMS", tag: "Personalised Texts", href: "/services/dynamic-sms" },
+];
+
+const logos = [
+  "/images/clients/vit.png", "/images/clients/anna.png",
+  "/images/clients/saveetha-university.png", "/images/clients/mgr.png",
+  "/images/clients/vel tech.png", "/images/clients/avit.png",
+  "/images/clients/vinayagam.png", "/images/clients/dhaanish.png",
+  "/images/clients/mm.jpg", "/images/clients/vallalar.jpg",
+  "/images/clients/vimal.jpg", "/images/clients/Texile/avm.avif",
+  "/images/clients/mottors/bmg.jpg", "/images/clients/mottors/rms.jpg",
+  "/images/clients/mottors/sathya.jpg", "/images/clients/mottors/sri.png",
+];
+
+export default function Hero() {
+  const [active, setActive] = useState(0);
+  const [fading, setFading] = useState(false);
+
+  const goTo = (idx) => {
+    if (idx === active) return;
+    setFading(true);
+    setTimeout(() => { setActive(idx); setFading(false); }, 350);
+  };
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setIsAnimating(true);
-      setTimeout(() => {
-        setCurrentSlide((prev) => (prev + 1) % services.length);
-        setIsAnimating(false);
-      }, 500);
+    const t = setInterval(() => {
+      const next = (active + 1) % services.length;
+      setFading(true);
+      setTimeout(() => { setActive(next); setFading(false); }, 350);
     }, 4000);
+    return () => clearInterval(t);
+  }, [active]);
 
-    return () => clearInterval(timer);
-  }, [services.length]);
+  const s = services[active];
 
   return (
-    <section className="relative w-full bg-[#F1F5FF] overflow-hidden pt-4 pb-6 lg:pt-6">
+    <section className="w-full bg-[#F8FAFF]">
+      <div className="max-w-[1380px] mx-auto px-5 sm:px-8 lg:px-12">
 
-      {/* Subtle decorative blobs */}
-      <div className="absolute top-[-120px] right-[-120px] w-[480px] h-[480px] rounded-full bg-gradient-to-br from-blue-400/15 to-violet-400/10 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-[-80px] left-[-80px] w-[320px] h-[320px] rounded-full bg-gradient-to-tr from-violet-400/15 to-blue-400/10 blur-2xl pointer-events-none" />
+        {/* ══ MOBILE LAYOUT: flex-col → content → slideshow → buttons ══ */}
+        {/* ══ DESKTOP LAYOUT: 2-col grid ══ */}
+        <div className="
+          flex flex-col
+          lg:grid lg:grid-cols-[1fr_1fr] lg:gap-16 lg:items-center
+          pt-[72px] lg:pt-[80px]
+        ">
 
-      <div className="max-w-[1380px] mx-auto w-full px-6 lg:px-10 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-10 items-center mb-10 lg:mb-24">
-
-          {/* ── Left Column ── */}
-          <div className="space-y-5 md:space-y-7 text-center lg:text-left mt-4 md:mt-0">
-            {/* Headline */}
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[4.2rem] font-extrabold leading-[1.1] text-slate-900 tracking-tight">
-              The Best{' '}
+          {/* ── 1. TEXT CONTENT (mobile: always first) ── */}
+          <div className="text-center lg:text-left pt-6 lg:pt-20 lg:pb-20 order-1">
+            <h1 className="text-[1.7rem] sm:text-5xl md:text-6xl lg:text-[3.8rem] font-extrabold leading-[1.15] tracking-tight text-slate-900">
+              The Best{" "}
               <span className="bg-gradient-to-r from-blue-500 to-violet-600 bg-clip-text text-transparent">
                 Digital Marketing
-              </span>{' '}
+              </span>{" "}
               Company in India.
             </h1>
 
-            {/* Subheadline */}
-            <p className="text-slate-500 text-base md:text-xl font-medium max-w-xl leading-relaxed mx-auto lg:mx-0 opacity-90">
-              Scale your brand, increase organic traffic, and generate high-quality leads with our data-driven bulk SMS, SEO, and marketing strategies.
+            {/* Subtext — desktop only */}
+            <p className="hidden md:block mt-5 text-slate-500 text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
+              Scale your brand with data-driven Bulk SMS, WhatsApp Marketing, Meta Ads &amp; SEO — trusted by 5,000+ businesses across India.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
-              <Link
-                href="/contact-us"
-                className="px-8 py-3.5 md:py-4 rounded-2xl font-bold text-[14px] md:text-[15px] text-white bg-gradient-to-r from-blue-500 to-violet-600 shadow-lg shadow-blue-500/25 active:scale-95 transition-all text-center"
-              >
+            {/* Stats — desktop only */}
+            <div className="hidden md:flex gap-10 mt-7">
+              {[["5,000+", "Clients"], ["10+", "Years Exp"], ["99%", "Delivery"]].map(([n, l]) => (
+                <div key={l}>
+                  <p className="text-2xl font-extrabold bg-gradient-to-r from-blue-500 to-violet-600 bg-clip-text text-transparent">{n}</p>
+                  <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider mt-0.5">{l}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA — visible on desktop only here; mobile has its own below */}
+            <div className="hidden md:flex gap-3 mt-8">
+              <Link href="/contact-us" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-violet-600 text-white font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-[1.02] transition-all">
                 Get a Free Proposal
               </Link>
-              <Link
-                href="/packages"
-                className="px-8 py-3.5 md:py-4 rounded-2xl font-bold text-[14px] md:text-[15px] text-slate-700 border-2 border-slate-200 bg-white active:scale-95 transition-all text-center"
-              >
-                View Our Packages
+              <Link href="/packages" className="inline-flex items-center gap-2 text-slate-700 font-bold text-sm px-7 py-3.5 rounded-xl border-2 border-slate-200 bg-white hover:border-blue-300 transition-all">
+                View Packages
               </Link>
             </div>
           </div>
 
-          {/* ── Right Column (Modern Premium Slideshow) ── */}
-          <div className="relative h-[380px] sm:h-[450px] md:h-[550px] lg:h-[650px] flex items-center justify-center">
-            
-            {/* Background Aura Glows */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-400 rounded-full aura-glow animate-aura-1 hidden md:block" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-violet-400 rounded-full aura-glow animate-aura-2 hidden md:block" />
+          {/* ── 2. SLIDESHOW (mobile: second) ── */}
+          <div className="relative flex flex-col items-center order-2 py-3 lg:py-16">
 
-            {/* Slide Container with Perspective */}
-            <div className={`relative w-full aspect-square max-w-[320px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[600px] transition-all duration-1000 transform ${isAnimating ? 'opacity-0 scale-90 -rotate-3' : 'opacity-100 scale-100 rotate-0'}`}>
-              <div className="relative w-full h-full flex items-center justify-center p-2 md:p-4">
-                <Image
-                  src={services[currentSlide].image}
-                  alt={services[currentSlide].title}
-                  width={650}
-                  height={650}
-                  className="object-contain drop-shadow-[0_15px_40px_rgba(59,130,246,0.2)] md:drop-shadow-[0_20px_60px_rgba(59,130,246,0.25)]"
-                  priority
-                  unoptimized={true}
-                />
-              </div>
-
-              {/* Floating Glassmorphism Card (Minimalist) */}
-              <div className="absolute -bottom-2 left-6 right-6 md:bottom-8 md:-right-4 md:left-auto md:w-[240px] glass-card rounded-[1.2rem] md:rounded-[1.5rem] p-3.5 md:p-4 pt-4.5 md:pt-5 transition-all duration-700 delay-300 transform translate-y-0 group">
-                <div className="flex flex-col gap-1 md:gap-1.5">
-                  <span className="text-[8px] md:text-[9px] font-bold tracking-[0.15em] text-blue-600 uppercase opacity-60">Expertise</span>
-                  <h3 className="text-base md:text-xl font-black text-slate-900 leading-tight">
-                    {services[currentSlide].title}
-                  </h3>
-                  <div className="mt-1 flex md:mt-1.5 gap-1">
-                    {services.map((_, idx) => (
-                      <div 
-                        key={idx} 
-                        className={`h-1 rounded-full transition-all duration-500 ${idx === currentSlide ? 'w-6 bg-blue-600' : 'w-1.5 bg-slate-200'}`} 
-                      />
-                    ))}
-                  </div>
-                </div>
-
-                {/* Shimmer Effect overlay */}
-                <div className="absolute inset-0 rounded-[1.2rem] md:rounded-[1.5rem] overflow-hidden pointer-events-none">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/30 to-white/0 -translate-x-full animate-marquee" style={{ animationDuration: '3s', animationIterationCount: 'infinite' }} />
-                </div>
-              </div>
+            {/* Soft blur bg — desktop */}
+            <div className="absolute inset-0 items-center justify-center hidden lg:flex pointer-events-none">
+              <div className="w-72 h-72 rounded-full bg-blue-200/25 blur-[90px]" />
             </div>
 
+            {/* Image */}
+            <div className={`relative w-[280px] sm:w-[480px] lg:w-[600px] aspect-[4/3] lg:aspect-[16/10] z-10 transition-all duration-350 bg-white rounded-[2rem] border-[6px] border-white shadow-[0_24px_60px_-15px_rgba(0,0,0,0.15)] overflow-hidden group ${fading ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}>
+              <Link href={s.href} className="block w-full h-full">
+                <Image
+                  key={active}
+                  src={s.image}
+                  alt={s.title}
+                  fill
+                  className="object-cover group-hover:scale-[1.05] transition-transform duration-700"
+                  priority
+                  unoptimized
+                />
+              </Link>
+            </div>
+
+            {/* Mobile service chip */}
+            <div className="mt-6 flex justify-center lg:hidden">
+              <Link
+                href={s.href}
+                className="group inline-flex items-center gap-3 bg-white/70 backdrop-blur-md border border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.06)] rounded-full pl-2 pr-4 py-1.5 transition-all active:scale-95 uppercase tracking-wide"
+              >
+                <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-blue-600 to-violet-500 flex items-center justify-center shadow-md">
+                  <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                </div>
+                <span className="text-[11px] font-[900] text-slate-800 truncate max-w-[180px] pt-0.5">{s.title}</span>
+                <svg className="w-3.5 h-3.5 text-blue-600 group-active:translate-x-1 transition-transform stroke-[3px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+
+            {/* Mobile dots */}
+            <div className="flex justify-center gap-2 mt-5 lg:hidden">
+              {services.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => goTo(i)}
+                  className={`h-1.5 rounded-full transition-all duration-500 ease-out ${i === active ? "w-8 bg-slate-800" : "w-1.5 bg-slate-300"}`}
+                />
+              ))}
+            </div>
+
+            {/* Desktop card */}
+            <div className="hidden lg:block absolute bottom-10 -right-10 w-[260px] bg-white rounded-3xl border border-slate-100 shadow-xl p-5 z-20">
+              <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.18em] mb-1.5">Current Service</p>
+              <h3 className="text-lg font-extrabold text-slate-900 leading-tight">{s.title}</h3>
+              <p className="text-xs text-slate-400 mt-0.5 font-medium">{s.tag}</p>
+              <div className="flex gap-1.5 mt-3">
+                {services.map((_, i) => (
+                  <button key={i} onClick={() => goTo(i)} className={`h-1.5 rounded-full transition-all duration-400 ${i === active ? "w-7 bg-gradient-to-r from-blue-500 to-violet-500" : "w-2 bg-slate-200 hover:bg-slate-300"}`} />
+                ))}
+              </div>
+            </div>
           </div>
+
+          {/* ── 3. CTA BUTTONS (mobile: third, below slideshow) ── */}
+          <div className="flex gap-2 justify-center order-3 pb-3 md:hidden">
+            <Link href="/contact-us" className="flex-1 inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-violet-600 text-white font-bold text-[13px] px-4 py-3 rounded-xl shadow-lg shadow-blue-500/25 active:scale-95 transition-all">
+              Get a Free Proposal
+            </Link>
+            <Link href="/packages" className="flex-1 inline-flex items-center justify-center text-slate-700 font-bold text-[13px] px-4 py-3 rounded-xl border-2 border-slate-200 bg-white active:scale-95 transition-all">
+              View Packages
+            </Link>
+          </div>
+
         </div>
       </div>
 
-      {/* ── Client Marquee (Steady, Top Colleges Lead) ── */}
-      <div className="w-full overflow-hidden bg-white border-y border-slate-100 py-6 md:py-8 relative z-20">
-        <div className="relative w-full overflow-hidden">
-          <div className="animate-marquee whitespace-nowrap flex items-center gap-12 md:gap-20">
-            {[
-              // ── Top Priority Colleges ──
-              '/images/clients/vit.png',
-              '/images/clients/anna.png',
-              
-              // ── Other Educational Institutions ──
-              '/images/clients/saveetha-university.png',
-              '/images/clients/mgr.png',
-              '/images/clients/vel tech.png',
-              '/images/clients/avit.png',
-              '/images/clients/vinayagam.png',
-              
-              // ── Commercial & Service Partners ──
-              '/images/clients/dhaanish.png',
-              '/images/clients/mm.jpg',
-              '/images/clients/vallalar.jpg',
-              '/images/clients/vimal.jpg',
-              '/images/clients/Texile/avm.avif',
-              '/images/clients/Texile/download.png',
-              '/images/clients/Texile/kgf.jpg',
-              '/images/clients/mottors/bmg.jpg',
-              '/images/clients/mottors/rms.jpg',
-              '/images/clients/mottors/salvam.jpg',
-              '/images/clients/mottors/sathya.jpg',
-              '/images/clients/mottors/sri.png',
-            ].concat([
-              '/images/clients/vit.png',
-              '/images/clients/anna.png',
-              '/images/clients/saveetha-university.png',
-              '/images/clients/mgr.png',
-              '/images/clients/vel tech.png',
-              '/images/clients/avit.png',
-              '/images/clients/vinayagam.png',
-              '/images/clients/dhaanish.png',
-              '/images/clients/mm.jpg',
-              '/images/clients/vallalar.jpg',
-              '/images/clients/vimal.jpg',
-              '/images/clients/Texile/avm.avif',
-              '/images/clients/Texile/download.png',
-              '/images/clients/Texile/kgf.jpg',
-              '/images/clients/mottors/bmg.jpg',
-              '/images/clients/mottors/rms.jpg',
-              '/images/clients/mottors/salvam.jpg',
-              '/images/clients/mottors/sathya.jpg',
-              '/images/clients/mottors/sri.png',
-            ]).map((src, idx) => {
-              const isLarge = src.includes('saveetha-university.png') || src.includes('anna.png');
+      {/* ── 4. MARQUEE (colourful logos, no grayscale) ── */}
+      <div className="border-t border-slate-100 bg-white py-3 md:py-5 overflow-hidden">
+        <p className="text-center text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-slate-400 font-bold mb-2 md:mb-4">
+          Trusted by 5,000+ businesses
+        </p>
+        <div className="relative overflow-hidden">
+          <div className="absolute left-0 top-0 bottom-0 w-10 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-10 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+          <div className="animate-marquee whitespace-nowrap flex items-center gap-5 md:gap-12">
+            {[...logos, ...logos].map((src, i) => {
+              const big = src.includes("saveetha") || src.includes("anna");
               return (
-                <div 
-                  key={idx} 
-                  className={`relative flex-shrink-0 px-2 md:px-4 transition-transform duration-500 hover:scale-105 
-                    ${isLarge 
-                      ? 'h-24 md:h-36 min-w-[180px] md:min-w-[320px]' 
-                      : 'h-20 md:h-28 min-w-[140px] md:min-w-[240px]'}`}
-                >
-                  <Image
-                    src={src}
-                    alt="Partner Logo"
-                    fill
-                    className="object-contain"
-                    sizes={isLarge ? "(max-width: 768px) 180px, 320px" : "(max-width: 768px) 140px, 240px"}
-                    priority
-                    unoptimized={true}
-                  />
+                <div key={i} className={`relative flex-shrink-0 ${big ? "h-8 md:h-14 min-w-[70px] md:min-w-[140px]" : "h-6 md:h-10 min-w-[50px] md:min-w-[100px]"}`}>
+                  <Image src={src} alt="client" fill className="object-contain" sizes="120px" unoptimized />
                 </div>
               );
             })}
           </div>
-
         </div>
       </div>
+
     </section>
   );
 }

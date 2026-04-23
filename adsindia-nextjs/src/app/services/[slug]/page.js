@@ -4,14 +4,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import { motion } from 'framer-motion';
-import { 
-  ArrowRight, 
-  CheckCircle2, 
-  LayoutGrid, 
-  ShieldCheck, 
-  Zap, 
-  Clock, 
-  BarChart3, 
+import {
+  ArrowRight,
+  CheckCircle2,
+  LayoutGrid,
+  ShieldCheck,
+  Zap,
+  Clock,
+  BarChart3,
   Lock,
   ChevronRight
 } from 'lucide-react';
@@ -38,7 +38,7 @@ const servicesData = {
       { step: "04", title: "Insight Analysis", desc: "Analyze performance reports to continuously optimize your marketing spend." }
     ],
     benefits: ["✅ Instant bulk delivery", "✅ Certified DND compliance", "✅ 99.9% message uptime", "✅ Personalized sender IDs"],
-    images: ["/images/new/684ba8c14f7e2d3b7021b6f2_Frame 4273209-p-1600.webp", "/images/new/bulk-sms-services.webp", "/images/new/WhatisBulkSMS-cXSjF65N.webp", "/images/new/V1_SMS-vs-RCS_980x460px-1024x481.webp"],
+    images: ["/images/services/promo_3d.webp", "/images/services/PROMOTIONAL SMS - DND.webp", "/images/services/Promotional SMS -DND.webp", "/images/services/Dynamic Sms_new.webp"],
     ctaText: "Launch Campaign"
   },
   'whatsapp-marketing': {
@@ -61,7 +61,7 @@ const servicesData = {
       { step: "04", title: "Optimization", desc: "Track response times and conversion metrics to refine your communication strategy." }
     ],
     benefits: ["✅ Verified Business Profile", "✅ Real-time multi-agent support", "✅ Advanced drip automation", "✅ Official Meta API integration"],
-    images: ["/images/new/WhatsApp-Chatbot-Automate.webp", "/images/new/WhatsApp-Bluetick.webp", "/images/new/689c33d44ce1f2e463c4a8ac_Whatsapp chatbot builder-p-1600.webp", "/images/new/689c301c1ae7b481d0e33317_whatsapp chatbot.webp"],
+    images: ["/images/services/whatsapp_3d.webp", "/images/services/whatsapp-new.webp", "/images/services/Whatapp Bulk SMS.webp", "/images/services/Virtual WhatsApp.webp"],
     ctaText: "Start Campaign"
   },
   'dynamic-sms': {
@@ -84,7 +84,7 @@ const servicesData = {
       { step: "04", title: "Rapid Delivery", desc: "Send thousands of unique, personalized messages in seconds across our fast routes." }
     ],
     benefits: ["✅ Infinite variable mapping", "✅ Real-time API triggers", "✅ Bulk CSV support", "✅ Detailed delivery logs"],
-    images: ["/images/new/Frame-1.webp", "/images/new/dynamic-img22.webp", "/images/new/WhatsApp-Dynamic-Message.webp", "/images/new/673d214247579fc17d125657_01 - Dynamic Content.webp"],
+    images: ["/images/services/Dynamic SMS.webp", "/images/services/Dynamic Sms_new.webp", "/images/services/Dynamic Sms_new-resized.webp", "/images/services/promo_3d.webp"],
     ctaText: "Get Personal"
   },
   'otp-sms': {
@@ -107,7 +107,7 @@ const servicesData = {
       { step: "04", title: "Live Monitoring", desc: "Keep track of delivery latency and successful authentication rates via our dashboard." }
     ],
     benefits: ["✅ Millisecond delivery global", "✅ 99.99% uptime guarantee", "✅ Direct carrier connections", "✅ Detailed audit trails"],
-    images: ["/images/new/OTP-SMS.webp", "/images/new/OTP-SMS-Step-by-step.webp", "/images/new/Two-factor-authentication-2FA.webp", "/images/new/unlimited-otp-sender-image-from-shree-tripada-01.webp"],
+    images: ["/images/services/OTP SMS.webp", "/images/services/OTP SMS-resized.webp", "/images/services/TRANSACTIONAL SMS.webp", "/images/services/transac_3d.webp"],
     ctaText: "Secure App"
   },
   'transactional-sms': {
@@ -130,7 +130,7 @@ const servicesData = {
       { step: "04", title: "Delivery Oversight", desc: "Monitor success rates and latency through our advanced reporting dashboard." }
     ],
     benefits: ["✅ 24/7 service availability", "✅ Superior delivery rates", "✅ Automatic routing logic", "✅ Full regulatory support"],
-    images: ["/images/new/transactional-sms.webp", "/images/new/transactional-sms-vs-otp-sms-for-business-01.webp", "/images/new/Payment-alerts.webp", "/images/new/smsg-low-cost-high-return-communications-with-transactional-sms-use-case.svg"],
+    images: ["/images/services/transac_3d.webp", "/images/services/TRANSACTIONAL SMS.webp", "/images/services/OTP SMS.webp", "/images/services/unified_solution.webp"],
     ctaText: "Get Started"
   },
   'web-design': {
@@ -153,7 +153,7 @@ const servicesData = {
       { step: "04", title: "Launch & Growth", desc: "Continuous monitoring and updates to keep your application at the peak of performance." }
     ],
     benefits: ["✅ Future-proof technologies", "✅ Mobile-first responsive design", "✅ Optimized for conversion", "✅ Ongoing technical support"],
-    images: ["/images/new/680a1b80b7a094ef37ed03b5_Frame 1805.webp", "/images/new/unnamed.webp", "/images/new/Frame-1.webp", "/images/new/680a085726eaba22160edee4_Frame 1871.webp"],
+    images: ["/images/services/Web Design.webp", "/images/services/WebDesign_new.webp", "/images/services/WebDesign_new-resized.webp", "/images/services/unified_solution.webp"],
     ctaText: "Start Build"
   },
   'graphic-design': {
@@ -176,7 +176,7 @@ const servicesData = {
       { step: "04", title: "Full Asset Delivery", desc: "You receive all source files and exports optimized for both digital and print." }
     ],
     benefits: ["✅ 100% custom creatives", "✅ Comprehensive brand equity", "✅ High-res print ready", "✅ Rapid revision cycle"],
-    images: ["/images/new/images (3).webp", "/images/new/67de09cdde4d25cc629cace8_Frame 627.webp", "/images/new/67de09cde8303b99c5e129e4_Frame 628.webp", "/images/new/67de09cdd0d30f0945cf00a1_Frame 1867.webp"],
+    images: ["/images/services/Graphic Design.webp", "/images/services/GraphicDesign_new.webp", "/images/services/GraphicDesign_new-resized.webp", "/images/services/Graphic Design-resized.webp"],
     ctaText: "Get Design"
   },
   'meta-ads': {
@@ -199,7 +199,7 @@ const servicesData = {
       { step: "04", title: "Scale Phase", desc: "Scaling budget on winning combinations while continuously testing new hooks." }
     ],
     benefits: ["✅ Dedicated account manager", "✅ Transparent ROI reporting", "✅ Creative A/B testing", "✅ Full pixel configuration"],
-    images: ["/images/new/meta-2.webp", "/images/new/Meta-Ads-What-types-of-ads-are-available-blog-image.--scaled.webp", "/images/new/680a1b81b51aca53d898923a_Frame 1804-2.webp", "/images/new/682456f5d1fcc9b5c1f6929d_Frame 1865-p-1600.webp"],
+    images: ["/images/services/Meta Ads.webp", "/images/services/Meta Ads-resized.webp", "/images/services/Meta_Whatsapp.webp", "/images/services/Meta_Whatsapp_resized.webp"],
     ctaText: "Deploy Ads"
   },
   'voice-solutions': {
@@ -222,7 +222,7 @@ const servicesData = {
       { step: "04", title: "Launch & Analytics", desc: "Go live and track call duration, department traffic, and missed call conversions." }
     ],
     benefits: ["✅ Professional brand image", "✅ Automated call handling", "✅ Scalable cloud infrastructure", "✅ Detailed call recording"],
-    images: ["/images/new/Route-Mobile_Products_Voice_IVR_Banner-copy.webp", "/images/new/images (6).webp", "/images/new/images (7).webp", "/images/new/images (8).webp"],
+    images: ["/images/services/promo_3d.webp", "/images/services/unified_solution.webp", "/images/services/transac_3d.webp", "/images/services/Dynamic SMS.webp"],
     ctaText: "Request Quote"
   },
   'rcs-messaging': {
@@ -245,7 +245,7 @@ const servicesData = {
       { step: "04", title: "Campaign Deploy", desc: "Execute high-impact rich messaging campaigns and monitor user interactions." }
     ],
     benefits: ["✅ 5x higher engagement", "✅ Verified blue tick trust", "✅ No app download required", "✅ Native rich-media experience"],
-    images: ["/images/new/rcs1.webp", "/images/new/V1_SMS-vs-RCS_980x460px-1024x481.webp", "/images/new/680a085693e0014238588223_Frame 1875.webp", "/images/new/680a08561620645eca9fc69b_Frame 1874.webp"],
+    images: ["/images/services/transac_3d.webp", "/images/services/TRANSACTIONAL SMS.webp", "/images/services/Dynamic SMS.webp", "/images/services/unified_solution.webp"],
     ctaText: "Upgrade to RCS"
   },
   'ai-workflows': {
@@ -268,7 +268,7 @@ const servicesData = {
       { step: "04", title: "Continuous Refine", desc: "Monitoring the automated flows and refining them for maximum speed and accuracy." }
     ],
     benefits: ["✅ Zero manual data entry", "✅ Instant lead responses", "✅ Error-free processing", "✅ 24/7 autonomous operation"],
-    images: ["/images/new/673d214247579fc17d125657_01 - Dynamic Content.webp", "/images/new/684ba8c14f7e2d3b7021b6f2_Frame 4273209-p-1600.webp", "/images/new/Automation.webp", "/images/new/680a1b80b7a094ef37ed03b5_Frame 1805.webp"],
+    images: ["/images/services/unified_solution.webp", "/images/services/Dynamic SMS.webp", "/images/services/promo_3d.webp", "/images/services/whatsapp_3d.webp"],
     ctaText: "Automate Today"
   },
   'meta-whatsapp-api': {
@@ -291,33 +291,34 @@ const servicesData = {
       { step: "04", title: "Compliance Check", desc: "Final verification of message templates and opt-in processes for official launch." }
     ],
     benefits: ["✅ Trusted business verification", "✅ Massive broadcast limits", "✅ Guaranteed API stability", "✅ Full session management"],
-    images: ["/images/new/689c301c1ae7b481d0e33317_whatsapp chatbot.webp", "/images/new/WhatsApp-Bluetick.webp", "/images/new/WhatsApp-Chatbot-Automate.webp", "/images/new/689c33d44ce1f2e463c4a8ac_Whatsapp chatbot builder-p-1600.webp"],
+    images: ["/images/services/Meta_Whatsapp.webp", "/images/services/whatsapp_3d.webp", "/images/services/Virtual WhatsApp.webp", "/images/services/Whatapp Bulk SMS.webp"],
     ctaText: "Link API"
   }
 };
 
+
 const DEFAULT_SERVICE = {
-    h1: "Next-Gen Communication Infrastructure — Engineered for Scale",
-    title: "Premium Digital Service",
-    subtitle: "High-performance marketing, messaging, and development solutions built to scale your enterprise.",
-    desc: "Ads Indiaa provides comprehensive digital and communication tools ranging from WhatsApp API and Bulk SMS to Graphic Design and Meta Ads. We focus on ROI-driven campaigns and rock-solid infrastructure that grows with your business.",
-    icon: "fas fa-rocket",
-    video: "/images/new/Background wave gradient.mp4",
-    features: [
-      { icon: "fas fa-check-circle", title: "Enterprise Grade", desc: "Every campaign and design is vetted for top-tier performance and reliability." },
-      { icon: "fas fa-bolt", title: "Rapid Deployment", desc: "We respect your speed-to-market and deliver high-speed configurations." },
-      { icon: "fas fa-headset", title: "Expert Support", desc: "Our tactical team is available 24/7 to solve your integration challenges." },
-      { icon: "fas fa-chart-line", title: "Growth Focused", desc: "We optimize for meaningful KPIs: conversions, leads, and actual revenue growth." }
-    ],
-    process: [
-      { step: "01", title: "Tactical Consultation", desc: "We dive deep into your operational requirements and goals." },
-      { step: "02", title: "Architectural Planning", desc: "We map out the perfect digital infrastructure and strategy." },
-      { step: "03", title: "Seamless Execution", desc: "Our lead engineers deploy your campaign or build your product." },
-      { step: "04", title: "Scale Phase", desc: "Review performance analytics and scale winning configurations." }
-    ],
-    benefits: ["✅ ISO Certified Infrastructure", "✅ End-to-end Deployments", "✅ Real-time Performance Logs", "✅ 1,000,000+ Daily Capacity"],
-    images: ["/images/new/680a08557fde502beb620434_Frame 1873.webp", "/images/new/680a0856a93b549cccfea4b4_Frame 1876.webp", "/images/new/67de09cdd0d30f0945cf00a1_Frame 1867.webp", "/images/new/680a08561620645eca9fc69b_Frame 1874.webp"],
-    ctaText: "Deploy Now"
+  h1: "Next-Gen Communication Infrastructure — Engineered for Scale",
+  title: "Premium Digital Service",
+  subtitle: "High-performance marketing, messaging, and development solutions built to scale your enterprise.",
+  desc: "Ads Indiaa provides comprehensive digital and communication tools ranging from WhatsApp API and Bulk SMS to Graphic Design and Meta Ads. We focus on ROI-driven campaigns and rock-solid infrastructure that grows with your business.",
+  icon: "fas fa-rocket",
+  video: "/images/new/Background wave gradient.mp4",
+  features: [
+    { icon: "fas fa-check-circle", title: "Enterprise Grade", desc: "Every campaign and design is vetted for top-tier performance and reliability." },
+    { icon: "fas fa-bolt", title: "Rapid Deployment", desc: "We respect your speed-to-market and deliver high-speed configurations." },
+    { icon: "fas fa-headset", title: "Expert Support", desc: "Our tactical team is available 24/7 to solve your integration challenges." },
+    { icon: "fas fa-chart-line", title: "Growth Focused", desc: "We optimize for meaningful KPIs: conversions, leads, and actual revenue growth." }
+  ],
+  process: [
+    { step: "01", title: "Tactical Consultation", desc: "We dive deep into your operational requirements and goals." },
+    { step: "02", title: "Architectural Planning", desc: "We map out the perfect digital infrastructure and strategy." },
+    { step: "03", title: "Seamless Execution", desc: "Our lead engineers deploy your campaign or build your product." },
+    { step: "04", title: "Scale Phase", desc: "Review performance analytics and scale winning configurations." }
+  ],
+  benefits: ["✅ ISO Certified Infrastructure", "✅ End-to-end Deployments", "✅ Real-time Performance Logs", "✅ 1,000,000+ Daily Capacity"],
+  images: ["/images/new/680a08557fde502beb620434_Frame 1873.webp", "/images/new/680a0856a93b549cccfea4b4_Frame 1876.webp", "/images/new/67de09cdd0d30f0945cf00a1_Frame 1867.webp", "/images/new/680a08561620645eca9fc69b_Frame 1874.webp"],
+  ctaText: "Deploy Now"
 };
 
 // Icon bg colors for variety
@@ -339,9 +340,9 @@ export default function ServiceDetail({ params }) {
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
-            
+
             {/* Left: Content */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
@@ -355,21 +356,21 @@ export default function ServiceDetail({ params }) {
                   </span>
                 )}
               </h1>
-              
+
               <p className="text-slate-500 text-lg md:text-xl font-medium leading-relaxed mb-12">
                 {service.subtitle}
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-5">
-                <Link 
-                  href="/contact-us" 
+                <Link
+                  href="/contact-us"
                   className="group inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-600 to-violet-600 text-white font-bold rounded-2xl shadow-[0_20px_40px_-10px_rgba(37,99,235,0.4)] hover:shadow-[0_25px_50px_-12px_rgba(37,99,235,0.5)] hover:-translate-y-1 transition-all duration-300"
                 >
                   <span className="uppercase tracking-widest text-[10px] font-black">{service.ctaText}</span>
                   <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <Link 
-                  href="/services" 
+                <Link
+                  href="/services"
                   className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-slate-700 font-bold rounded-2xl border border-slate-200 hover:border-blue-300 hover:text-blue-600 shadow-sm transition-all duration-300"
                 >
                   <span className="uppercase tracking-widest text-[10px] font-black">View All Services</span>
@@ -378,28 +379,28 @@ export default function ServiceDetail({ params }) {
             </motion.div>
 
             {/* Right: Video Stream */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               className="relative"
             >
               <div className="relative z-10 w-full aspect-[4/3] rounded-[3rem] overflow-hidden border-[12px] border-white shadow-[0_40px_100px_-20px_rgba(30,58,138,0.1)] bg-slate-50">
-                <video 
-                  src={service.video} 
-                  autoPlay 
-                  loop 
-                  muted 
+                <video
+                  src={service.video}
+                  autoPlay
+                  loop
+                  muted
                   playsInline
                   className="w-full h-full object-cover"
                 ></video>
-                
+
                 {/* Overlay Badge */}
                 <div className="hidden md:flex absolute bottom-10 left-10 p-5 bg-white/80 backdrop-blur-xl border border-white/40 rounded-3xl items-center gap-4 shadow-xl">
                   <div className="flex -space-x-3">
-                    {[1,2,3].map(i => (
+                    {[1, 2, 3].map(i => (
                       <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden shadow-sm">
-                        <img src={`https://i.pravatar.cc/100?img=${i+20}`} alt="user" />
+                        <img src={`https://i.pravatar.cc/100?img=${i + 20}`} alt="user" />
                       </div>
                     ))}
                   </div>
@@ -409,7 +410,7 @@ export default function ServiceDetail({ params }) {
                   </div>
                 </div>
               </div>
-              
+
               {/* Decorative blobs */}
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-50 rounded-full blur-3xl -z-10" />
               <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-violet-50 rounded-full blur-3xl -z-10" />
@@ -423,8 +424,8 @@ export default function ServiceDetail({ params }) {
       <section className="py-32 px-4 bg-white relative">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-24 items-center">
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -455,7 +456,7 @@ export default function ServiceDetail({ params }) {
                 <p className="text-slate-500 text-lg leading-relaxed mb-10 font-medium max-w-lg">
                   {service.desc}
                 </p>
-                
+
                 <div className="grid sm:grid-cols-2 gap-8">
                   {service.benefits.map((benefit, idx) => (
                     <div key={idx} className="flex items-start gap-4 group">
@@ -562,7 +563,7 @@ export default function ServiceDetail({ params }) {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {service.images.slice(0, 4).map((img, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 whileHover={{ y: -12, scale: 1.05 }}
                 initial={{ opacity: 0, y: 30 }}
@@ -574,11 +575,11 @@ export default function ServiceDetail({ params }) {
                 {/* Innovative Gradient Boarder Wrapper */}
                 <div className="p-[3px] bg-gradient-to-br from-blue-400/30 to-violet-500/30 rounded-[2.5rem] group-hover:from-blue-500 group-hover:to-violet-600 transition-all duration-500 shadow-xl overflow-hidden">
                   <div className="relative aspect-square bg-white rounded-[2.3rem] overflow-hidden flex items-center justify-center p-4">
-                    <Image 
-                      src={img} 
-                      alt={`${service.title} view ${i + 1}`} 
-                      fill 
-                      className="object-contain p-4 transition-transform duration-700 group-hover:scale-105" 
+                    <Image
+                      src={img}
+                      alt={`${service.title} view ${i + 1}`}
+                      fill
+                      className="object-contain p-4 transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
                 </div>
@@ -596,33 +597,33 @@ export default function ServiceDetail({ params }) {
       {/* ── FINAL LIGHT CTA ── */}
       <section className="py-20 md:py-32 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.98 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="bg-gradient-to-br from-blue-50/50 to-violet-50/50 rounded-[2.5rem] md:rounded-[4rem] p-10 md:p-24 text-center border-2 border-white shadow-2xl relative overflow-hidden"
-            >
-              <div className="relative z-10">
-                <div className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px] mb-6 md:mb-8">Ready to grow?</div>
-                <h2 className="text-3xl md:text-7xl font-black text-slate-900 mb-8 md:mb-10 leading-[1.1] tracking-tight">
-                  Let's engineer <br />
-                  <span className="text-blue-600">your next win.</span>
-                </h2>
-                <Link href="/contact-us" className="inline-flex items-center justify-center gap-4 px-10 py-5 md:px-14 md:py-6 bg-slate-900 text-white font-black rounded-2xl md:rounded-[2.5rem] hover:bg-blue-600 transition-all duration-300 shadow-2xl group">
-                  <span className="uppercase tracking-widest text-[10px] md:text-[11px]">{service.ctaText}</span>
-                  <Zap size={18} fill="currentColor" className="group-hover:scale-125 transition-transform" />
-                </Link>
-                
-                <p className="mt-8 md:mt-12 text-slate-400 text-[12px] md:text-sm font-bold flex items-center justify-center gap-4">
-                  <ShieldCheck size={18} className="text-blue-500" />
-                  No card required. Free technical audit.
-                </p>
-              </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.98 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="bg-gradient-to-br from-blue-50/50 to-violet-50/50 rounded-[2.5rem] md:rounded-[4rem] p-10 md:p-24 text-center border-2 border-white shadow-2xl relative overflow-hidden"
+          >
+            <div className="relative z-10">
+              <div className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px] mb-6 md:mb-8">Ready to grow?</div>
+              <h2 className="text-3xl md:text-7xl font-black text-slate-900 mb-8 md:mb-10 leading-[1.1] tracking-tight">
+                Let's engineer <br />
+                <span className="text-blue-600">your next win.</span>
+              </h2>
+              <Link href="/contact-us" className="inline-flex items-center justify-center gap-4 px-10 py-5 md:px-14 md:py-6 bg-slate-900 text-white font-black rounded-2xl md:rounded-[2.5rem] hover:bg-blue-600 transition-all duration-300 shadow-2xl group">
+                <span className="uppercase tracking-widest text-[10px] md:text-[11px]">{service.ctaText}</span>
+                <Zap size={18} fill="currentColor" className="group-hover:scale-125 transition-transform" />
+              </Link>
 
-              {/* Decorative side shape */}
-              <div className="absolute top-1/2 left-0 -translate-y-1/2 w-48 h-48 bg-blue-100/30 rounded-full blur-[80px] -ml-24" />
-              <div className="absolute top-1/2 right-0 -translate-y-1/2 w-48 h-48 bg-violet-100/30 rounded-full blur-[80px] -mr-24" />
-            </motion.div>
+              <p className="mt-8 md:mt-12 text-slate-400 text-[12px] md:text-sm font-bold flex items-center justify-center gap-4">
+                <ShieldCheck size={18} className="text-blue-500" />
+                No card required. Free technical audit.
+              </p>
+            </div>
+
+            {/* Decorative side shape */}
+            <div className="absolute top-1/2 left-0 -translate-y-1/2 w-48 h-48 bg-blue-100/30 rounded-full blur-[80px] -ml-24" />
+            <div className="absolute top-1/2 right-0 -translate-y-1/2 w-48 h-48 bg-violet-100/30 rounded-full blur-[80px] -mr-24" />
+          </motion.div>
         </div>
       </section>
 

@@ -185,7 +185,7 @@ export default function ServicesPage() {
                     </motion.div>
 
                     <h1 className="text-4xl md:text-6xl font-[900] mb-8 tracking-tighter text-slate-900 leading-[0.95] lg:max-w-4xl mx-auto">
-                         Elevate Your <span className="text-blue-600">Digital</span> Presence.
+                        Elevate Your <span className="text-blue-600">Digital</span> Presence.
                     </h1>
                     <p className="text-slate-500 text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed opacity-80">
                         Powering modern enterprises with scalable communication protocols and high-performance marketing automation systems.
@@ -205,7 +205,7 @@ export default function ServicesPage() {
                             >
                                 <Tilt options={tiltOptions} className="h-full">
                                     <div className={`group relative h-full bg-white border border-slate-100 rounded-[3rem] overflow-hidden hover:shadow-[0_32px_64px_-16px_rgba(0,0,0,0.08)] transition-all duration-700 p-8 lg:p-10 flex flex-col`}>
-                                        
+
                                         {/* Background Subtle Gradient */}
                                         <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-20 transition-opacity duration-700`} />
 

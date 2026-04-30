@@ -37,7 +37,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-500 ${scrolled ? 'bg-white shadow-md py-1.5' : 'bg-white py-2 border-b border-slate-100'} ${isHidden ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`}>
+      <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-500 ${scrolled ? 'bg-white shadow-md py-1.5' : 'bg-white py-2'} ${isHidden ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`}>
         <div className="flex items-center justify-between px-6 lg:px-10 max-w-[1380px] mx-auto">
 
           {/* Logo */}

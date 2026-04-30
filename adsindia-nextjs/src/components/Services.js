@@ -9,7 +9,7 @@ export default function Services() {
     { title: "Secure OTP SMS", slug: "otp-sms", icon: "fas fa-key", color: "from-indigo-500 to-violet-600", image: "/images/new/OTP-SMS.webp", desc: "Bank-grade authentication for apps and portals with sub-3 second delivery and global routing paths." },
     { title: "Meta Ads Management", slug: "meta-ads", icon: "fas fa-magnet", color: "from-blue-500 to-violet-500", image: "/images/new/meta-2.webp", desc: "Expert Facebook & Instagram ad strategies designed to lower CPA and maximize ROAS through precise audience targeting." },
     { title: "Dynamic SMS", slug: "dynamic-sms", icon: "fas fa-sync", color: "from-violet-500 to-fuchsia-600", image: "/images/new/Frame-1.webp", desc: "Hyper-personalize your communication by injecting unique user data and variables into large-scale messaging campaigns." },
-    { title: "Voice Solutions (IVR)", slug: "voice-solutions", icon: "fas fa-phone-alt", color: "from-blue-600 to-cyan-500", image: "/images/new/Route-Mobile_Products_Voice_IVR_Banner-copy.webp", isNew: true, desc: "Professionalize your business with Multi-level IVR, Missed Call marketing, and automated voice feedback systems." },
+    { title: "Voice Solutions", slug: "voice-solutions", icon: "fas fa-phone-alt", color: "from-blue-600 to-cyan-500", image: "/images/new/Route-Mobile_Products_Voice_IVR_Banner-copy.webp", isNew: true, desc: "Professionalize your business with Multi-level IVR, Missed Call marketing, and automated voice feedback systems." },
     { title: "RCS Business Messaging", slug: "rcs-messaging", icon: "fas fa-comment-alt", color: "from-violet-500 to-pink-500", image: "/images/new/rcs1.webp", isNew: true, desc: "Upgrade from SMS to rich, verified conversations with images, buttons, and carousels directly in the native messaging app." },
     { title: "Web & App Development", slug: "web-design", icon: "fas fa-laptop-code", color: "from-indigo-500 to-blue-600", image: "/images/new/680a1b80b7a094ef37ed03b5_Frame 1805.webp", desc: "Future-proof your digital presence with lightning-fast, SEO-optimized web applications built for conversion." },
     { title: "Digital Branding", slug: "graphic-design", icon: "fas fa-palette", color: "from-violet-500 to-purple-600", image: "/images/new/images (3).webp", desc: "Crafting meaningful visual identities and high-impact marketing assets that differentiate your brand in a crowded market." },
@@ -29,7 +29,7 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
           {servicesData.map((service, index) => (
             <Link
               href={`/services/${service.slug}`}

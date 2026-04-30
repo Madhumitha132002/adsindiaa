@@ -46,6 +46,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -157,7 +161,7 @@ body {
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee 180s linear infinite;
+  animation: marquee 450s linear infinite;
 }
 
 .animate-marquee:hover {
@@ -203,4 +207,19 @@ body {
 
 .animate-aura-2 {
   animation: aura-float-2 18s ease-in-out infinite;
+}
+
+/* Hide Next.js / Vercel Development Badge */
+#nextjs-portal, 
+[data-nextjs-toast], 
+[data-vercel-feedback-button],
+.nextjs-static-indicator,
+div[class*="FeedbackButton"],
+div[class*="Toast"],
+#__next-build-watcher,
+#__next-prerender-indicator {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }

@@ -54,11 +54,11 @@ export default function Hero() {
         <div className="
           flex flex-col
           lg:grid lg:grid-cols-[1fr_1fr] lg:gap-16 lg:items-center
-          pt-[72px] lg:pt-[80px]
+          pt-[70px] lg:pt-[90px]
         ">
 
           {/* ── 1. TEXT CONTENT (mobile: always first) ── */}
-          <div className="text-center lg:text-left pt-6 lg:pt-20 lg:pb-20 order-1">
+          <div className="text-center lg:text-left pt-2 lg:pt-10 lg:pb-20 order-1">
             <h1 className="text-[1.7rem] sm:text-5xl md:text-6xl lg:text-[3.8rem] font-extrabold leading-[1.15] tracking-tight text-slate-900">
               The Best{" "}
               <span className="bg-gradient-to-r from-blue-500 to-violet-600 bg-clip-text text-transparent">
@@ -170,19 +170,38 @@ export default function Hero() {
       </div>
 
       {/* ── 4. MARQUEE (colourful logos, no grayscale) ── */}
-      <div className="border-t border-slate-100 bg-white py-3 md:py-5 overflow-hidden">
-        <p className="text-center text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-slate-400 font-bold mb-2 md:mb-4">
+      <div className="bg-white mt-4 md:mt-10 py-6 md:py-10 overflow-hidden shadow-[0_-1px_0_0_rgba(0,0,0,0.03)]">
+        <p className="text-center text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-slate-400 font-bold mb-4 md:mb-8">
           Trusted by 5,000+ businesses
         </p>
         <div className="relative overflow-hidden">
-          <div className="absolute left-0 top-0 bottom-0 w-10 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-10 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
-          <div className="animate-marquee whitespace-nowrap flex items-center gap-5 md:gap-12">
+          <div className="absolute left-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-10 md:w-20 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
+          <div className="animate-marquee whitespace-nowrap flex items-center gap-12 md:gap-24">
             {[...logos, ...logos].map((src, i) => {
-              const big = src.includes("saveetha") || src.includes("anna");
+              // Detailed Priority Categorization
+              const isElite = src.includes("saveetha") || src.includes("vel tech");
+              const isTopTier = src.includes("vit.png") || src.includes("mgr.png") || src.includes("avit.png") || src.includes("anna.png");
+              const isSecondaryTier = src.includes("vinayagam") || src.includes("dhaanish");
+              
+              let heightClass = "h-12 md:h-18"; // Standard Tier
+              
+              if (isElite) {
+                heightClass = "h-24 md:h-40"; // Elite Tier: Maximum prominence
+              } else if (isTopTier) {
+                heightClass = "h-20 md:h-32"; // Top Tier: Large
+              } else if (isSecondaryTier) {
+                heightClass = "h-16 md:h-24"; // Secondary Tier: Medium
+              }
+
               return (
-                <div key={i} className={`relative flex-shrink-0 ${big ? "h-8 md:h-14 min-w-[70px] md:min-w-[140px]" : "h-6 md:h-10 min-w-[50px] md:min-w-[100px]"}`}>
-                  <Image src={src} alt="client" fill className="object-contain" sizes="120px" unoptimized />
+                <div key={i} className={`${heightClass} flex-shrink-0 flex items-center justify-center px-4`}>
+                  <img 
+                    src={src} 
+                    alt="client" 
+                    loading="lazy" 
+                    className="h-full w-auto object-contain transition-all duration-500 hover:scale-110" 
+                  />
                 </div>
               );
             })}

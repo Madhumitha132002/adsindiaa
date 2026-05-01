@@ -82,8 +82,8 @@ export default function Cta() {
                 <p className="text-slate-500 text-sm leading-relaxed mb-6 max-w-[200px]">
                   Our team is here to help with your inquiries.
                 </p>
-                <a href="mailto:support@adsindiaa.in" className="text-[#2D60FF] font-bold hover:text-violet-600 transition-colors text-sm underline-offset-4 hover:underline">
-                  support@adsindiaa.in
+                <a href="mailto:support@adsindiaa.com" className="text-[#2D60FF] font-bold hover:text-violet-600 transition-colors text-sm underline-offset-4 hover:underline">
+                  support@adsindiaa.com
                 </a>
                 
                 {/* Vertical Divider 1 */}

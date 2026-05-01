@@ -1,4 +1,4 @@
-const BASE_URL = 'https://www.adsindiaa.in'
+const BASE_URL = 'https://www.adsindiaa.com'
 
 const servicesSlugs = [
   'promotional-sms',

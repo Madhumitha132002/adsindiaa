@@ -26,7 +26,7 @@ const infoTiles = [
   { icon: "✨", label: "New Feature", value: "Voice OTP Calls Live", color: "text-blue-600 bg-blue-100", promoted: true },
   { icon: "🕐", label: "Hours", value: "Mon – Sat · 9 AM – 7 PM", color: "text-slate-600 bg-slate-100" },
   { icon: "📍", label: "Office", value: "Walajapet - 632513", color: "text-violet-600 bg-violet-100" },
-  { icon: "📧", label: "Email", value: "info@adsindiaa.in", color: "text-emerald-600 bg-emerald-100" },
+  { icon: "📧", label: "Email", value: "info@adsindiaa.com", color: "text-emerald-600 bg-emerald-100" },
 ];
 
 export default function BlogPage() {

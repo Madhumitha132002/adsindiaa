@@ -1,4 +1,4 @@
-const BASE_URL = 'https://www.adsindiaa.in'
+const BASE_URL = 'https://www.adsindiaa.com'
 
 export default function robots() {
   return {

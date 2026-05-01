@@ -181,8 +181,8 @@ export default function Footer() {
                   <div className="bg-white/40 backdrop-blur-md rounded-[2rem] p-8 border border-[#BFA37C]/40 shadow-sm relative overflow-hidden group">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-[#BFA37C]/5 rounded-full -mr-16 -mt-16 blur-2xl" />
                     <p className="text-[10px] font-black tracking-widest text-[#BFA37C] mb-3 uppercase">Email</p>
-                    <a href="mailto:info@adsindiaa.in" className="text-[16px] font-black text-slate-900 block group-hover:text-teal-600 transition-colors break-all">
-                      info@adsindiaa.in
+                    <a href="mailto:info@adsindiaa.com" className="text-[16px] font-black text-slate-900 block group-hover:text-teal-600 transition-colors break-all">
+                      info@adsindiaa.com
                     </a>
                   </div>
 

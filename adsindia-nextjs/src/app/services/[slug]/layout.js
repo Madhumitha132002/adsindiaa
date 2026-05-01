@@ -1,4 +1,4 @@
-const BASE_URL = 'https://www.adsindiaa.in'
+const BASE_URL = 'https://www.adsindiaa.com'
 
 // Per-service metadata map for precise SEO
 const serviceMeta = {

@@ -11,17 +11,17 @@ const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Ads India',
-  url: 'https://www.adsindia.com',
-  logo: 'https://www.adsindia.com/logo.webp',
+  url: 'https://www.adsindiaa.com',
+  logo: 'https://www.adsindiaa.com/logo.webp',
   description:
     'Ads India is a leading digital marketing and bulk SMS service provider in India, serving 5000+ clients with transactional SMS, promotional SMS, SEO, branding, and web design.',
   foundingDate: '2015',
   numberOfEmployees: { '@type': 'QuantitativeValue', value: '50+' },
   areaServed: 'IN',
   sameAs: [
-    'https://www.facebook.com/adsindia',
-    'https://www.twitter.com/adsindia',
-    'https://www.linkedin.com/company/adsindia',
+    'https://www.facebook.com/adsindiaa',
+    'https://www.twitter.com/adsindiaa',
+    'https://www.linkedin.com/company/adsindiaa',
   ],
   contactPoint: {
     '@type': 'ContactPoint',

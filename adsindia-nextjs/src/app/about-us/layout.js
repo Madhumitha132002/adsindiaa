@@ -1,4 +1,4 @@
-const BASE_URL = 'https://www.adsindiaa.in'
+const BASE_URL = 'https://www.adsindiaa.com'
 
 export const metadata = {
   title: 'About Us | Leading Bulk SMS & Digital Marketing Company in India',

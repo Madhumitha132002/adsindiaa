@@ -43,7 +43,7 @@ export default function Clients() {
           
           {/* Header Section */}
           <div className="max-w-3xl mx-auto text-center space-y-6 mb-12">
-            <span className="inline-flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.3em] text-blue-600 bg-blue-50 border border-blue-100 px-5 py-2 rounded-full shadow-sm">
+            <span className="hidden md:inline-flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.3em] text-blue-600 bg-blue-50 border border-blue-100 px-5 py-2 rounded-full shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
               Trusted by Experts
             </span>

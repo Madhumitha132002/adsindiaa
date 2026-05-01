@@ -186,7 +186,7 @@ export default function ProductsPage() {
                       className="w-full h-auto aspect-video object-cover"
                       preload="metadata"
                     >
-                      <source src="/videos/Sms Demo.mp4" type="video/mp4" />
+                      <source src="/images/new/Promotional.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
@@ -233,7 +233,7 @@ export default function ProductsPage() {
                       className="w-full h-auto aspect-video object-cover"
                       preload="metadata"
                     >
-                      <source src="/videos/Whatsapp Demo.mp4" type="video/mp4" />
+                      <source src="/images/new/Otp video.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
@@ -412,9 +412,16 @@ export default function ProductsPage() {
 
         /* Responsive */
         @media (max-width: 1024px) {
-          .pr-grid { grid-template-columns: 1fr; }
-          .pb-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+          .pr-container { padding: 0 16px; }
+          .pr-title { font-size: 2.8rem; line-height: 1.1; margin-bottom: 16px; }
+          .pr-sub { font-size: 16px; }
+          .flagship-card { border-radius: 2rem; }
+          .flagship-card .p-12 { padding: 2rem; }
+          .pr-grid { grid-template-columns: 1fr; gap: 16px; }
+          .pr-card { padding: 24px; border-radius: 20px; }
+          .pb-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
           .pb-item { display: flex; flex-direction: column; align-items: center; }
+          .pb-item p { font-size: 14px; }
         }
       `}</style>
     </>

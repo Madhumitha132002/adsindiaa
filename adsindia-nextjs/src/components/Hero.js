@@ -171,7 +171,7 @@ export default function Hero() {
 
       {/* ── 4. MARQUEE (colourful logos, no grayscale) ── */}
       <div className="bg-white mt-4 md:mt-10 py-6 md:py-10 overflow-hidden shadow-[0_-1px_0_0_rgba(0,0,0,0.03)]">
-        <p className="text-center text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-slate-400 font-bold mb-4 md:mb-8">
+        <p className="hidden md:block text-center text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-slate-400 font-bold mb-4 md:mb-8">
           Trusted by 5,000+ businesses
         </p>
         <div className="relative overflow-hidden">

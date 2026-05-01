@@ -47,7 +47,7 @@ const servicesData = {
     subtitle: "Transform your customer engagement with official WhatsApp broadcasting and automated workflows.",
     desc: "Reach your customers where they are most active. Our WhatsApp marketing platform allows you to send rich media messages, automate responses, and manage conversations at scale. From abandoned cart reminders to automated customer support, build meaningful relationships through the world's most popular messaging app.",
     icon: "fab fa-whatsapp",
-    video: "/images/new/Whatsapp Demo.mp4",
+    imageHero: "/images/services/whatsapp_hero_3d.png",
     features: [
       { icon: "fas fa-robot", title: "Automated Chatbots", desc: "Deploy AI-driven bots to handle common queries and guide customers through the sales funnel 24/7." },
       { icon: "fas fa-users", title: "Shared Team Inbox", desc: "Collaborate effortlessly with a unified inbox that allows multiple agents to manage customer chats." },
@@ -70,7 +70,7 @@ const servicesData = {
     subtitle: "Deliver hyper-personalized bulk messages that feel like 1-on-1 conversations.",
     desc: "Generic bulk SMS is a thing of the past. Our Dynamic SMS engine allows you to inject unique data points for every recipient—from names and account balances to order statuses and custom appointment times. Elevate your engagement by talking to your customers as individuals, not numbers.",
     icon: "fas fa-sync",
-    video: "/images/new/Sms Demo.mp4",
+    imageHero: "/images/services/dynamic_sms_hero_3d.png",
     features: [
       { icon: "fas fa-user-tag", title: "Smart Variable Mapping", desc: "Map any CSV column or API field directly into your message templates with zero Latency." },
       { icon: "fas fa-chart-pie", title: "Dynamic A/B Testing", desc: "Test different personalization strategies to see which variables drive the most clicks." },
@@ -116,7 +116,7 @@ const servicesData = {
     subtitle: "Deliver mission-critical business alerts, order updates, and confirmations instantly.",
     desc: "Keep your customers informed at every step of their journey. Transactional SMS is used for essential notifications like order confirmations, shipping updates, and account alerts. Our service ensures these critical messages arrive instantly, regardless of the recipient's DND status.",
     icon: "fas fa-shield-alt",
-    video: "/images/new/Sms Video.mp4",
+    video: "/images/services/20260426-1700-07.2978127.mp4",
     features: [
       { icon: "fas fa-check-double", title: "DND Bypass", desc: "Legal bypass for transactional content ensures your customers always receive their vital updates." },
       { icon: "fas fa-plug", title: "ERP/CRM Integration", desc: "Easily connect with your existing business software to trigger automatic alerts." },
@@ -139,7 +139,7 @@ const servicesData = {
     subtitle: "We build lightning-fast, SEO-optimized web applications designed for conversion and scale.",
     desc: "Your digital presence is your most valuable asset. We focus on building modern web experiences that are not only visually stunning but also technically superior. Using cutting-edge technologies like Next.js, we ensure your site is fast, secure, and ready to grow with your business.",
     icon: "fas fa-laptop-code",
-    video: "/images/new/ADS2.mp4",
+    imageHero: "/images/services/WebDesign_new.webp",
     features: [
       { icon: "fas fa-code", title: "Clean, Scalable Code", desc: "We write efficient, modular code that's easy to maintain and built for long-term growth." },
       { icon: "fas fa-search-dollar", title: "SEO-First Engineering", desc: "Performance optimization and search visibility are baked into our development lifecycle." },
@@ -162,7 +162,7 @@ const servicesData = {
     subtitle: "Elevate your brand with award-winning design and cohesive visual identity systems.",
     desc: "Design is the silent ambassador of your brand. Our creative team crafts visual narratives that build immediate trust and recognition. From impactful logos to comprehensive social media identities, we create the visuals that define your position in the market.",
     icon: "fas fa-palette",
-    video: "/images/new/ADS.mp4",
+    imageHero: "/images/services/GraphicDesign_new.webp",
     features: [
       { icon: "fas fa-vector-square", title: "Logo & Brand Mark", desc: "Unique, scalable identities that represent your core values across all platforms." },
       { icon: "fas fa-swatchbook", title: "Color & Typography", desc: "Scientifically chosen palettes and fonts that evoke the right emotions in your audience." },
@@ -185,7 +185,7 @@ const servicesData = {
     subtitle: "Scale your revenue with high-ROI Meta ad campaigns designed for precision and results.",
     desc: "Don't just spend on ads—invest in growth. Our Meta Ads experts specialize in crafting data-driven strategies for Facebook and Instagram. From creative design to precision audience targeting, we manage every aspect of your campaign to ensure maximum ROAS.",
     icon: "fab fa-facebook",
-    video: "/images/new/ADS3.mp4",
+    imageHero: "/images/services/meta_ads_hero_3d.png",
     features: [
       { icon: "fas fa-bullseye", title: "Laser Targeting", desc: "We identify and reach your most profitable audiences with behavioral and interest mapping." },
       { icon: "fas fa-pencil-ruler", title: "Performance Creatives", desc: "Ad designs specifically engineered to stop the scroll and drive clicks." },
@@ -208,7 +208,7 @@ const servicesData = {
     subtitle: "Enhance your professional image with automated IVR, missed call services, and voice broadcasts.",
     desc: "Communicate with a human touch at digital scale. Our voice solutions provide everything from professional IVR menus to automated voice reminders. Build a sophisticated brand presence that handles high call volumes effortlessly while providing a seamless caller experience.",
     icon: "fas fa-phone",
-    video: "/images/new/ADS2.mp4",
+    imageHero: "/images/new/Route-Mobile_Products_Voice_IVR_Banner-copy.webp",
     features: [
       { icon: "fas fa-sitemap", title: "Multi-Level IVR", desc: "Create sophisticated call routing menus to guide customers to the right department instantly." },
       { icon: "fas fa-phone-slash", title: "Missed Call Marketing", desc: "Boost lead generation by allowing customers to show interest with a simple zero-cost missed call." },
@@ -231,7 +231,7 @@ const servicesData = {
     subtitle: "Upgrade to verified, high-impact rich media messages directly in the native messaging app.",
     desc: "RCS (Rich Communication Services) is the evolution of SMS. It brings the power of app-like experiences—including carousels, maps, and payment buttons—directly into the native messaging inbox of your customers' Android devices. Verified sender IDs build instant trust and drive significantly higher engagement.",
     icon: "fas fa-comment-dots",
-    video: "/images/new/Sms Video.mp4",
+    video: "/images/services/20260426-1700-07.2978127.mp4",
     features: [
       { icon: "fas fa-check-circle", title: "Verified Branding", desc: "Every message is delivered from a verified business profile, including your company logo." },
       { icon: "fas fa-images", title: "Rich Media Gallery", desc: "Showcase products with high-resolution images, videos, and interactive carousels." },
@@ -277,7 +277,7 @@ const servicesData = {
     subtitle: "Build on the official framework for high-volume business messaging and verification.",
     desc: "Access the most robust WhatsApp implementation available. The official Meta API provides the stability, security, and scalability required by growing enterprises. From high-throughput broadcasting to sophisticated multi-agent management, build your entire customer communication strategy on a rock-solid foundation.",
     icon: "fab fa-whatsapp-square",
-    video: "/images/new/Whatsapp Demo.mp4",
+    imageHero: "/images/services/whatsapp_hero_3d.png",
     features: [
       { icon: "fas fa-check-double", title: "Verified Green Tick", desc: "We assist with the official business verification to get your brand the coveted green tick." },
       { icon: "fas fa-bolt", title: "High Usage Limits", desc: "Scale beyond standard business account limits to reach millions of customers reliably." },
@@ -303,7 +303,7 @@ const DEFAULT_SERVICE = {
   subtitle: "High-performance marketing, messaging, and development solutions built to scale your enterprise.",
   desc: "Ads Indiaa provides comprehensive digital and communication tools ranging from WhatsApp API and Bulk SMS to Graphic Design and Meta Ads. We focus on ROI-driven campaigns and rock-solid infrastructure that grows with your business.",
   icon: "fas fa-rocket",
-  video: "/images/new/Background wave gradient.mp4",
+  imageHero: "/images/new/680a08557fde502beb620434_Frame 1873.webp",
   features: [
     { icon: "fas fa-check-circle", title: "Enterprise Grade", desc: "Every campaign and design is vetted for top-tier performance and reliability." },
     { icon: "fas fa-bolt", title: "Rapid Deployment", desc: "We respect your speed-to-market and deliver high-speed configurations." },
@@ -386,14 +386,25 @@ export default function ServiceDetail({ params }) {
               className="relative"
             >
               <div className="relative z-10 w-full aspect-[4/3] rounded-[3rem] overflow-hidden border-[12px] border-white shadow-[0_40px_100px_-20px_rgba(30,58,138,0.1)] bg-slate-50">
-                <video
-                  src={service.video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover"
-                ></video>
+                {service.video ? (
+                  <video
+                    src={service.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  ></video>
+                ) : (
+                  <div className="w-full h-full overflow-hidden">
+                    <Image 
+                      src={service.imageHero} 
+                      alt={service.title} 
+                      fill 
+                      className="w-full h-full object-cover animate-cinematic-drift" 
+                    />
+                  </div>
+                )}
 
                 {/* Overlay Badge */}
                 <div className="hidden md:flex absolute bottom-10 left-10 p-5 bg-white/80 backdrop-blur-xl border border-white/40 rounded-3xl items-center gap-4 shadow-xl">
@@ -632,6 +643,16 @@ export default function ServiceDetail({ params }) {
           background-color: white !important;
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
           border-bottom: 1px solid #f1f5f9 !important;
+        }
+
+        @keyframes cinematicDrift {
+          0% { transform: scale(1.0) translateX(0); }
+          50% { transform: scale(1.1) translateX(-10px); }
+          100% { transform: scale(1.0) translateX(0); }
+        }
+
+        .animate-cinematic-drift {
+          animation: cinematicDrift 20s ease-in-out infinite;
         }
       `}</style>
     </main>

@@ -226,7 +226,7 @@ export default function AboutUs() {
             <p className="text-slate-500 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-medium mb-4">
               Ads India is one of the leading <strong className="text-slate-700">digital marketing companies in India</strong>, helping businesses scale with innovative <strong className="text-slate-700">bulk SMS services</strong>, branding, and performance-driven strategies.
             </p>
-            <p className="text-slate-400 text-base max-w-2xl mx-auto leading-relaxed font-medium mb-12">
+            <p className="hidden md:block text-slate-400 text-base max-w-2xl mx-auto leading-relaxed font-medium mb-12">
               Trusted by <strong className="text-slate-600">5000+ businesses, colleges & institutions</strong> across India for <strong className="text-slate-600">transactional SMS, promotional SMS, SEO, and web design</strong>.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
@@ -495,7 +495,7 @@ export default function AboutUs() {
                   Ready to Grow Your Business with India's{' '}
                   <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">Best Bulk SMS & Marketing Company?</span>
                 </h2>
-                <p className="text-white/70 text-sm md:text-lg mb-10 md:mb-12 max-w-xl mx-auto font-medium">
+                <p className="hidden md:block text-white/70 text-sm md:text-lg mb-10 md:mb-12 max-w-xl mx-auto font-medium">
                   Join <strong className="text-white">5000+ businesses</strong> who trust Ads India to power their <strong className="text-white">bulk SMS communications and digital marketing growth</strong> across India.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">

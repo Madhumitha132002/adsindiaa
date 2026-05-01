@@ -116,7 +116,7 @@ const servicesData = {
     subtitle: "Deliver mission-critical business alerts, order updates, and confirmations instantly.",
     desc: "Keep your customers informed at every step of their journey. Transactional SMS is used for essential notifications like order confirmations, shipping updates, and account alerts. Our service ensures these critical messages arrive instantly, regardless of the recipient's DND status.",
     icon: "fas fa-shield-alt",
-    video: "/images/services/20260426-1700-07.2978127.mp4",
+    imageHero: "/images/services/transactional_sms_hero_3d.png",
     features: [
       { icon: "fas fa-check-double", title: "DND Bypass", desc: "Legal bypass for transactional content ensures your customers always receive their vital updates." },
       { icon: "fas fa-plug", title: "ERP/CRM Integration", desc: "Easily connect with your existing business software to trigger automatic alerts." },
@@ -231,7 +231,7 @@ const servicesData = {
     subtitle: "Upgrade to verified, high-impact rich media messages directly in the native messaging app.",
     desc: "RCS (Rich Communication Services) is the evolution of SMS. It brings the power of app-like experiences—including carousels, maps, and payment buttons—directly into the native messaging inbox of your customers' Android devices. Verified sender IDs build instant trust and drive significantly higher engagement.",
     icon: "fas fa-comment-dots",
-    video: "/images/services/20260426-1700-07.2978127.mp4",
+    imageHero: "/images/services/transac_3d.webp",
     features: [
       { icon: "fas fa-check-circle", title: "Verified Branding", desc: "Every message is delivered from a verified business profile, including your company logo." },
       { icon: "fas fa-images", title: "Rich Media Gallery", desc: "Showcase products with high-resolution images, videos, and interactive carousels." },

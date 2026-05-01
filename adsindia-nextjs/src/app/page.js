@@ -10,7 +10,8 @@ import Cta from '@/components/Cta';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 
-const BASE_URL = 'https://www.adsindiaa.com'
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 
+                 (process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` : 'https://www.adsindiaa.com')
 
 export const metadata = {
   title: 'Ads Indiaa | #1 Bulk SMS & Digital Marketing Company in India',

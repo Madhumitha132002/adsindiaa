@@ -98,9 +98,14 @@ const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Ads Indiaa',
-  alternateName: 'Ads India',
+  alternateName: ['Ads India', 'Ads Indiaa Walajapet'],
   url: BASE_URL,
   logo: `${BASE_URL}/images/Ads_indiaa_logo.webp`,
+  brand: {
+    '@type': 'Brand',
+    name: 'Ads Indiaa',
+    logo: `${BASE_URL}/images/Ads_indiaa_logo.webp`,
+  },
   description:
     'Ads Indiaa is India\'s leading bulk SMS service provider and digital marketing agency, serving 5000+ clients with transactional SMS, promotional SMS, WhatsApp marketing, Meta Ads, SEO, and web design.',
   foundingDate: '2015',
@@ -142,6 +147,16 @@ const organizationSchema = {
     reviewCount: '5000',
     bestRating: '5',
   },
+  knowsAbout: [
+    'Bulk SMS Service',
+    'WhatsApp Marketing',
+    'Transactional SMS',
+    'OTP SMS Gateway',
+    'Digital Marketing',
+    'Meta Ads',
+    'SEO Services',
+    'Web Development',
+  ],
 }
 
 const websiteSchema = {
@@ -149,6 +164,7 @@ const websiteSchema = {
   '@type': 'WebSite',
   name: 'Ads Indiaa',
   url: BASE_URL,
+  alternateName: 'Ads Indiaa - Ultimate Messaging Solution',
   potentialAction: {
     '@type': 'SearchAction',
     target: `${BASE_URL}/services?q={search_term_string}`,

@@ -50,6 +50,7 @@ const localBusinessSchema = {
   '@type': 'LocalBusiness',
   '@id': `${BASE_URL}/#localbusiness`,
   name: 'Ads Indiaa',
+  alternateName: ['Ads India', 'Ads India Digital Marketing', 'Ads Indiaa Walajapet'],
   image: `${BASE_URL}/images/Ads_indiaa_logo.webp`,
   url: BASE_URL,
   telephone: '+91-73391-09747',
@@ -57,6 +58,11 @@ const localBusinessSchema = {
   priceRange: '₹₹',
   currenciesAccepted: 'INR',
   paymentAccepted: 'Cash, Credit Card, Online Transfer',
+  brand: {
+    '@type': 'Brand',
+    name: 'Ads Indiaa',
+    logo: `${BASE_URL}/images/Ads_indiaa_logo.webp`,
+  },
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'No: 63 MBT Trunk Road',
